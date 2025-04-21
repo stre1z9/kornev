@@ -739,6 +739,7 @@ footer .bbb .aaa .number {
     height: 100%;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math {
+    align-items: flex-start;
     gap: 12px;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math img {
