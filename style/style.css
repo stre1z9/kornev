@@ -466,7 +466,7 @@ main .tutor-sam .container .left .edu .cont .conedu {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  padding: 24px 48px;
+  padding: 48px 24px;
   border-radius: 32px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
@@ -730,7 +730,7 @@ footer .bbb .aaa .number {
     gap: 8px;
   }
   main .tutor-sam .container .left .edu .cont .conedu {
-    padding: 6px 12px;
+    padding: 12px 6px;
     border-radius: 8px;
     height: 100%;
   }
