@@ -7,16 +7,16 @@
 }
 
 @font-face {
-  font-family: roboto;
+  font-family: "roboto";
   src: url("./assets/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf");
 }
 body {
   width: 100%;
-  font-family: roboto, sans-serif;
+  font-family: "roboto", sans-serif;
 }
 
 a {
-  font-family: roboto, sans-serif;
+  font-family: "roboto", sans-serif;
   font-size: 20px;
   color: #202020;
   text-decoration: none;
@@ -295,7 +295,7 @@ main .banner {
   justify-content: center;
 }
 main .banner p {
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 56px;
   font-weight: 500;
 }
@@ -381,7 +381,7 @@ main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div {
   gap: 2px;
 }
 main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div p {
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 14px;
   color: #999999;
 }
@@ -410,7 +410,7 @@ main .otzyv button {
   padding: 16px 8px;
   background-color: #202020;
   color: #FEFEFE;
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 30px;
   border-radius: 24px;
   transition: all 0.3s ease;
@@ -444,11 +444,11 @@ main .tutor-sam .container .left .zag {
   gap: 32px;
 }
 main .tutor-sam .container .left .zag h1 {
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 96px;
 }
 main .tutor-sam .container .left .zag p {
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 36px;
   color: #757575;
 }
@@ -488,11 +488,11 @@ main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt {
   gap: 16px;
 }
 main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt h1 {
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 40px;
 }
 main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt p {
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 18px;
   color: #999999;
 }
@@ -502,7 +502,7 @@ main .tutor-sam .container .left .edu .cont .conedu .math a {
   padding: 16px 32px;
   background-color: #FB9835;
   border-radius: 32px;
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 36px;
   color: #FFFFFF;
   transition: all 0.3s ease;
@@ -529,7 +529,7 @@ footer .bbb {
 }
 footer .bbb p {
   width: 80%;
-  font-family: roboto;
+  font-family: "roboto";
   font-size: 24px;
   font-weight: 600;
 }
@@ -679,7 +679,7 @@ footer .bbb .aaa .number {
     font-size: 16px;
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div p {
-    font-family: roboto;
+    font-family: "roboto";
     font-size: 8px;
     color: #999999;
   }
@@ -693,7 +693,7 @@ footer .bbb .aaa .number {
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .bot-text {
     font-size: 10px;
-    font-family: roboto;
+    font-family: "roboto";
   }
   main .otzyv button {
     width: 40%;
