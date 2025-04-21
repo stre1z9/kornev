@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "roboto";
-  src: url("../assets/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf");
+  src: url("./assets/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf");
 }
 body {
   width: 100%;
@@ -295,7 +295,7 @@ main .banner {
   justify-content: center;
 }
 main .banner p {
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
   font-size: 56px;
   font-weight: 500;
 }
@@ -381,7 +381,7 @@ main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div {
   gap: 2px;
 }
 main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div p {
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
   font-size: 14px;
   color: #999999;
 }
@@ -410,7 +410,7 @@ main .otzyv button {
   padding: 16px 8px;
   background-color: #202020;
   color: #FEFEFE;
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
   font-size: 30px;
   border-radius: 24px;
   transition: all 0.3s ease;
@@ -444,11 +444,11 @@ main .tutor-sam .container .left .zag {
   gap: 32px;
 }
 main .tutor-sam .container .left .zag h1 {
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
   font-size: 96px;
 }
 main .tutor-sam .container .left .zag p {
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
   font-size: 36px;
   color: #757575;
 }
@@ -488,11 +488,11 @@ main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt {
   gap: 16px;
 }
 main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt h1 {
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
   font-size: 40px;
 }
 main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt p {
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
   font-size: 18px;
   color: #999999;
 }
@@ -502,7 +502,7 @@ main .tutor-sam .container .left .edu .cont .conedu .math a {
   padding: 16px 32px;
   background-color: #FB9835;
   border-radius: 32px;
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
   font-size: 36px;
   color: #FFFFFF;
   transition: all 0.3s ease;
@@ -529,7 +529,7 @@ footer .bbb {
 }
 footer .bbb p {
   width: 80%;
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
   font-size: 24px;
   font-weight: 600;
 }
@@ -548,8 +548,8 @@ footer .bbb .aaa .number {
   color: #FB9835;
 }
 
-/*Adaptive*/
-@media (min-width: 320px) and (max-width: 480px) {
+/*Adaptive 320-480*/
+@media (min-width: 320px) and (max-width: 480px) and (hover: none) {
   a {
     font-size: 10px;
   }
@@ -569,7 +569,6 @@ footer .bbb .aaa .number {
     display: none;
   }
   header nav .search-container .search-input {
-    display: none;
     width: 100%;
     padding: 4px 15px 4px 5px;
     font-size: 8px;
@@ -683,7 +682,7 @@ footer .bbb .aaa .number {
     font-size: 16px;
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div p {
-    font-family: "roboto";
+    font-family: "roboto", sans-serif;
     font-size: 8px;
     color: #999999;
   }
@@ -697,7 +696,7 @@ footer .bbb .aaa .number {
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .bot-text {
     font-size: 10px;
-    font-family: "roboto";
+    font-family: "roboto", sans-serif;
   }
   main .otzyv button {
     width: 40%;
@@ -710,11 +709,10 @@ footer .bbb .aaa .number {
   }
   main .tutor-sam .container {
     width: 100%;
-    justify-content: center;
     gap: 40px;
+    justify-content: center;
   }
   main .tutor-sam .container .left {
-    width: 100%;
     gap: 24px;
   }
   main .tutor-sam .container .left .zag {
@@ -728,6 +726,8 @@ footer .bbb .aaa .number {
   }
   main .tutor-sam .container .left .edu {
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
     gap: 8px;
   }
   main .tutor-sam .container .left .edu .cont {
@@ -739,15 +739,16 @@ footer .bbb .aaa .number {
     height: 100%;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math {
-    align-items: flex-start;
-    gap: 12px;
+    height: 100%;
+    gap: 6px;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math img {
     display: block;
     width: 25px;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math .math-text {
-    gap: 6px;
+    height: 70%;
+    justify-content: space-between;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt {
     gap: 4px;
@@ -779,6 +780,244 @@ footer .bbb .aaa .number {
   }
   footer .bbb .aaa p {
     font-size: 8px;
+    white-space: nowrap;
+  }
+}
+/*Adaptive 720*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  a {
+    font-size: 16px;
+  }
+  header nav {
+    flex-direction: row;
+    padding: 10px;
+    gap: 12px;
+  }
+  header nav .home {
+    font-size: 20px;
+  }
+  header nav .buttons {
+    flex-direction: row;
+    gap: 12px;
+  }
+  header nav .search-container {
+    display: none;
+  }
+  header nav .search-container .search-input {
+    width: 100%;
+    padding: 4px 15px 4px 5px;
+    font-size: 8px;
+  }
+  header nav .search-container .search-button {
+    display: none;
+  }
+  header nav .help {
+    padding: 10px 15px;
+  }
+  header .back .tutor {
+    width: 300px;
+    bottom: 40px;
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 8px 16px;
+    left: 15px;
+  }
+  main .news {
+    padding: 30px;
+  }
+  main .news .news-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .news .news-container .new {
+    width: 100%;
+    padding: 16px 12px;
+    justify-content: start;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .news .news-container .new .new-theme {
+    gap: 12px;
+  }
+  main .news .news-container .new .new-theme h1 {
+    font-size: 18px;
+  }
+  main .news .news-container .new .new-theme p {
+    font-size: 14px;
+  }
+  main .news .news-container .new .news-link, main .news .news-container .new a[href="#"] {
+    font-size: 14px;
+    padding: 8px 8px;
+    border-radius: 8px;
+  }
+  main .about {
+    padding: 30px;
+  }
+  main .about .con .content {
+    gap: 15px;
+  }
+  main .about .con .content .text {
+    gap: 6px;
+  }
+  main .about .con .content .text h1 {
+    font-size: 40px;
+  }
+  main .about .con .content .text p {
+    font-size: 26px;
+  }
+  main .about .con .content a {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  main .about .con img {
+    width: 50%;
+  }
+  main .banner p {
+    font-size: 18px;
+  }
+  main .banner .your-tutor {
+    height: 100px;
+  }
+  main .banner .now {
+    text-align: center;
+    height: 100px;
+  }
+  main .otzyv {
+    width: 100%;
+    padding: 30px;
+  }
+  main .otzyv .con-otzyv {
+    gap: 24px;
+  }
+  main .otzyv .con-otzyv .cont-otzyv {
+    flex-direction: row;
+    gap: 10px;
+  }
+  main .otzyv .con-otzyv .cont-otzyv .top-con {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti {
+    gap: 5px;
+  }
+  main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text {
+    gap: 3px;
+  }
+  main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text img {
+    width: 35px;
+    height: 35px;
+  }
+  main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div {
+    gap: 2px;
+  }
+  main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div h1 {
+    font-size: 20px;
+  }
+  main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div p {
+    font-family: "roboto", sans-serif;
+    font-size: 12px;
+    color: #999999;
+  }
+  main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div .stars {
+    gap: 3px;
+    white-space: nowrap;
+  }
+  main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div .stars .ss .star {
+    width: 12px;
+    height: 12px;
+  }
+  main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .bot-text {
+    font-size: 14px;
+    font-family: "roboto", sans-serif;
+  }
+  main .otzyv button {
+    width: 40%;
+    padding: 16px 8px;
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  main .tutor-sam {
+    padding: 30px;
+    width: 100%;
+  }
+  main .tutor-sam .container {
+    gap: 40px;
+    justify-content: center;
+  }
+  main .tutor-sam .container .left {
+    width: 100%;
+    gap: 24px;
+  }
+  main .tutor-sam .container .left .zag {
+    gap: 8px;
+  }
+  main .tutor-sam .container .left .zag h1 {
+    font-size: 24px;
+  }
+  main .tutor-sam .container .left .zag p {
+    font-size: 14px;
+  }
+  main .tutor-sam .container .left .edu {
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+  }
+  main .tutor-sam .container .left .edu .cont {
+    gap: 8px;
+  }
+  main .tutor-sam .container .left .edu .cont .conedu {
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 8px;
+    height: 100%;
+  }
+  main .tutor-sam .container .left .edu .cont .conedu .math {
+    height: 100%;
+    gap: 12px;
+  }
+  main .tutor-sam .container .left .edu .cont .conedu .math img {
+    display: block;
+    width: 25px;
+  }
+  main .tutor-sam .container .left .edu .cont .conedu .math .math-text {
+    height: 70%;
+    justify-content: space-between;
+  }
+  main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt {
+    gap: 8px;
+  }
+  main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt h1 {
+    font-size: 14px;
+  }
+  main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt p {
+    font-size: 8px;
+  }
+  main .tutor-sam .container .left .edu .cont .conedu .math a {
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 9px;
+  }
+  main .tutor-sam .container img {
+    width: 25%;
+    height: 100%;
+  }
+  footer {
+    padding: 30px;
+  }
+  footer .bbb p {
+    width: 80%;
+    font-size: 16px;
+  }
+  footer .bbb .aaa {
+    flex-direction: column;
+    gap: 3px;
+  }
+  footer .bbb .aaa p {
+    font-size: 16 px;
     white-space: nowrap;
   }
 }/*# sourceMappingURL=style.css.map */

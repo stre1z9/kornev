@@ -24,7 +24,7 @@ $purple: #907ADB;
 
 @font-face {
   font-family: 'roboto';
-  src: url('/assets/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf');
+  src: url('./assets/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf');
 }
 
 body {
@@ -351,7 +351,7 @@ main {
     display: flex;
     justify-content: center;
     p {
-      font-family: roboto;
+      font-family: 'roboto', sans-serif;
       font-size: 56px;
       font-weight: 500;
     }
@@ -438,7 +438,7 @@ main {
                   flex-direction: column;
                   gap: 2px;
                   p {
-                    font-family: roboto;
+                    font-family: 'roboto', sans-serif;
                     font-size: 14px;
                     color: #999999;
                   }
@@ -476,7 +476,7 @@ main {
       padding: 16px 8px;
       background-color: #202020;
       color: #FEFEFE;
-      font-family: roboto;
+      font-family: 'roboto', sans-serif;
       font-size: 30px;
       border-radius: 24px;
       transition: $hover-transition;
@@ -511,11 +511,11 @@ main {
           gap: 32px;
 
           h1 {
-            font-family: roboto;
+            font-family: 'roboto', sans-serif;
             font-size: 96px;
           }
           p {
-            font-family: roboto;
+            font-family: 'roboto', sans-serif;
             font-size: 36px;
             color: #757575;
           }
@@ -534,7 +534,7 @@ main {
               display: flex;
               flex-direction: column;
               background-color:#ffffff;
-              padding: 24px 48px;
+              padding: 48px 24px;
               border-radius: 32px;
               box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 
@@ -556,11 +556,11 @@ main {
                     gap: 16px;
 
                     h1 {
-                      font-family: roboto;
+                      font-family: 'roboto', sans-serif;
                       font-size: 40px;
                     }
                     p {
-                      font-family: roboto;
+                      font-family: 'roboto', sans-serif;
                       font-size: 18px;
                       color: #999999;
                     }
@@ -572,7 +572,7 @@ main {
                   padding: 16px 32px;
                   background-color: $primary-color;
                   border-radius: 32px;
-                  font-family: roboto;
+                  font-family: 'roboto', sans-serif;
                   font-size: 36px;
                   color: #FFFFFF;
                   transition: $hover-transition;
@@ -607,7 +607,7 @@ footer {
     justify-content: space-between;
     p {
       width: 80%;
-      font-family: roboto;
+      font-family: 'roboto', sans-serif;
       font-size: 24px;
       font-weight: 600;
     }
@@ -629,14 +629,14 @@ footer {
     }
   }
 }
-/*Adaptive*/
-@media (min-width: 320px) and (max-width: 480px) {
+/*Adaptive 320-480*/
+@media (min-width: 320px) and (max-width: 480px) and (hover: none) {
   a {
     font-size: 10px;
   }
   header {
     nav {
-      flex-direction: row;
+      flex-direction: column;
       padding: 10px;
       gap: 12px;
 
@@ -648,6 +648,7 @@ footer {
         gap: 12px;
       }
       .search-container {
+        display: none;
         .search-input {
           width: 100%;
           padding: 4px 15px 4px 5px;
@@ -778,7 +779,7 @@ footer {
                       font-size: 16px;
                     }
                     p {
-                      font-family: roboto;
+                      font-family: 'roboto', sans-serif;
                       font-size: 8px;
                       color: #999999;
                     }
@@ -796,7 +797,7 @@ footer {
                 }
                 .bot-text {
                   font-size: 10px;
-                  font-family: roboto;
+                  font-family: 'roboto', sans-serif;
                 }
               }
             }
@@ -813,8 +814,11 @@ footer {
     .tutor-sam {
       padding: 10px;
       .container {
+        width: 100%;
         gap: 40px;
+        justify-content: center;
         .left {
+          
           gap: 24px;
           .zag {
             gap: 8px;
@@ -827,23 +831,31 @@ footer {
             }
           }
           .edu {
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
             gap: 8px;
             .cont {
+              
               gap: 8px;
 
               .conedu {
-                padding: 6px 12px;
+                padding: 12px 12px;
                 border-radius: 8px;
                 height: 100%;
 
                 .math {
+                  height: 100%;
                   gap: 6px;
+                  
+                  
                   img {
                     display: block;
                     width: 25px;
                   }
                   .math-text {
-                    gap: 6px;
+                    height: 70%;
+                    justify-content: space-between;
 
                     .texxt {
                       gap: 4px;
@@ -885,6 +897,276 @@ footer {
 
         p {
           font-size: 8px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+/*Adaptive 720*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  a {
+    font-size: 16px;
+  }
+  header {
+    nav {
+      flex-direction: row;
+      padding: 10px;
+      gap: 12px;
+
+      .home {
+        font-size: 20px;
+      }
+      .buttons {
+        flex-direction: row;
+        gap: 12px;
+      }
+      .search-container {
+        display: none;
+        .search-input {
+          width: 100%;
+          padding: 4px 15px 4px 5px;
+          font-size: 8px;
+        }
+        .search-button {
+          display: none;
+        }
+      }
+      .help {
+        padding: 10px 15px;
+      }
+    }
+    .back {
+      .tutor {
+        width: 300px;
+        bottom: 40px;
+        font-size: 16px;
+        white-space: nowrap;
+        padding: 8px 16px;
+        left: 15px;
+      }
+    }
+  }
+  main {
+    .news {
+      padding: 30px;
+
+      .news-container {
+        flex-direction: column;
+        align-items: center;
+
+        .new {
+          width: 100%;
+          padding: 16px 12px;
+          justify-content: start;
+          height: fit-content;
+
+          .new-theme {
+            gap: 12px;
+
+            h1 {
+              font-size: 18px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+          .news-link, a[href="#"] {
+            font-size: 14px;
+            padding: 8px 8px;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+    .about {
+      padding: 30px;
+
+      .con {
+        .content {
+          gap: 15px;
+          
+          .text {
+            gap: 6px;
+
+            h1 {
+              font-size: 40px;
+            }
+            p {
+              font-size: 26px;
+            }
+          }
+          a {
+            font-size: 14px;
+            padding: 8px 16px;
+          }
+        }
+        img {
+          width: 50%;
+        }
+      }
+    }
+    .banner {
+      p {
+        font-size: 18px;
+      }
+      .your-tutor {
+        height: 100px;
+      }
+      .now {
+        text-align: center;
+        height: 100px;
+      }
+    }
+    .otzyv {
+      width: 100%;
+      padding: 30px;
+      .con-otzyv {
+        gap: 24px;
+        .cont-otzyv {
+          flex-direction: row;
+          gap: 10px;
+          .top-con {
+            flex-direction: column;
+            gap: 10px;
+            .otzyvy {
+              width: 100%;
+              padding: 10px 5px;
+              .texti {
+                gap: 5px;
+                .top-text {
+                  gap: 3px;
+                  img {
+                    width: 35px;
+                    height: 35px;
+                  }
+                  div {
+                    gap: 2px;
+                    h1 {
+                      font-size: 20px;
+                    }
+                    p {
+                      font-family: 'roboto', sans-serif;
+                      font-size: 12px;
+                      color: #999999;
+                    }
+                    .stars {
+                      gap: 3px;
+                      white-space: nowrap;
+                      .ss {
+                        .star {
+                          width: 12px;
+                          height: 12px;
+                        }
+                      }
+                    }
+                  }
+                }
+                .bot-text {
+                  font-size: 14px;
+                  font-family: 'roboto', sans-serif;
+                }
+              }
+            }
+          }
+        }
+      }
+      button {
+        width: 40%;
+        padding: 16px 8px;
+        font-size: 16px;
+        white-space: nowrap;
+      }
+    }
+    .tutor-sam {
+        padding: 30px;
+        width: 100%;
+      .container {
+        
+        gap: 40px;
+        justify-content: center;
+        .left {
+          width: 100%;
+          gap: 24px;
+          .zag {
+            gap: 8px;
+
+            h1 {
+              font-size: 24px;
+            }
+            p {
+              font-size: 14px;
+            }
+          }
+          .edu {
+            flex-direction: row;
+            
+            width: 100%;
+            gap: 20px;
+            .cont {
+              
+              gap: 8px;
+
+              .conedu {
+                width: 100%;
+                padding: 12px 12px;
+                border-radius: 8px;
+                height: 100%;
+
+                .math {
+                  height: 100%;
+                  gap: 12px;
+                  
+                  
+                  img {
+                    display: block;
+                    width: 25px;
+                  }
+                  .math-text {
+                    height: 70%;
+                    justify-content: space-between;
+
+                    .texxt {
+                      gap: 8px;
+
+                      h1 {
+                        font-size: 14px;
+                      }
+                      p {
+                        font-size: 8px;
+                      }
+                    }
+                  }
+                  a {
+                    padding: 4px 8px;
+                    border-radius: 8px;
+                    font-size: 9px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        img {
+          width: 25%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 30px;
+    .bbb {
+      p {
+        width: 80%;
+        font-size: 16px;
+      }
+      .aaa {
+        flex-direction: column;
+        gap: 3px;
+
+        p {
+          font-size: 16 px;
           white-space: nowrap;
         }
       }
