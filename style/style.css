@@ -7,16 +7,16 @@
 }
 
 @font-face {
-  font-family: "roboto";
+  font-family: roboto;
   src: url("./assets/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf");
 }
 body {
   width: 100%;
-  font-family: "roboto", sans-serif;
+  font-family: roboto, sans-serif;
 }
 
 a {
-  font-family: "roboto", sans-serif;
+  font-family: roboto, sans-serif;
   font-size: 20px;
   color: #202020;
   text-decoration: none;
