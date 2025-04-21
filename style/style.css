@@ -709,6 +709,8 @@ footer .bbb .aaa .number {
     padding: 10px;
   }
   main .tutor-sam .container {
+    width: 100%;
+    justify-content: center;
     gap: 40px;
   }
   main .tutor-sam .container .left {
@@ -725,6 +727,7 @@ footer .bbb .aaa .number {
     font-size: 14px;
   }
   main .tutor-sam .container .left .edu {
+    flex-direction: column;
     gap: 8px;
   }
   main .tutor-sam .container .left .edu .cont {
