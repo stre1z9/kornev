@@ -712,6 +712,7 @@ footer .bbb .aaa .number {
     gap: 40px;
   }
   main .tutor-sam .container .left {
+    width: 100%;
     gap: 24px;
   }
   main .tutor-sam .container .left .zag {
@@ -730,7 +731,7 @@ footer .bbb .aaa .number {
     gap: 8px;
   }
   main .tutor-sam .container .left .edu .cont .conedu {
-    padding: 12px 6px;
+    padding: 12px 12px;
     border-radius: 8px;
     height: 100%;
   }
