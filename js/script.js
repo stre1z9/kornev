@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
           "title": "Изменения в ОГЭ по русскому языку в 2025 году",
           "type": "text",
           "content": "В экзамен добавлено новое задание на анализ текста. Повышено внимание к орфографии и пунктуации. Подробности — в методических рекомендациях ФИПИ.",
-          "link": "#",
+          "link": "news.html",
           "linkText": "Перейти к новостям"
         },
         {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
           "title": "ЕГЭ по химии: новый формат заданий в 2025",
           "type": "text",
           "content": "В экзамен добавлены задания на анализ экспериментальных данных и расчеты. Подробности — в методических рекомендациях ФИПИ.",
-          "link": "#",
+          "link": "news.html",
           "linkText": "Перейти к новостям"
         },
         {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
           "title": "Пороговый балл ЕГЭ по математике повышен",
           "type": "text",
           "content": "В связи с изменением структуры экзамена пороговый балл для поступления на бюджетные места повышен. Подробности — в приказах Министерства образования.",
-          "link": "#",
+          "link": "news.html",
           "linkText": "Перейти к новостям"
         }
       ]
@@ -105,3 +105,50 @@ document.addEventListener('DOMContentLoaded', function() {
       
     }, 500);
   });
+  function openModal() {
+    document.getElementById('reviewModal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('reviewModal').style.display = 'none';
+}
+
+
+window.onclick = function(event) {
+    const modal = document.getElementById('reviewModal');
+    if (event.target === modal) {
+        closeModal();
+    }
+}
+
+
+document.querySelector('.review-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const reviewData = {
+      name: document.getElementById('name').value,
+      review: document.getElementById('review').value,
+      date: new Date().toISOString()
+  };
+
+  try {
+      const response = await fetch('http://localhost:3000/send-review', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(reviewData),
+      });
+
+      if (response.ok) {
+          alert('Отзыв успешно отправлен!');
+          closeModal();
+          this.reset(); // Очистка формы
+      } else {
+          throw new Error('Ошибка сервера');
+      }
+  } catch (error) {
+      console.error('Ошибка:', error);
+      alert('Произошла ошибка при отправке отзыва');
+  }
+});

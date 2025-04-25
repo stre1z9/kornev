@@ -5,6 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <title>Kornev School</title>
+    <style>
+        /* Стили для модального окна */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            position: relative;
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Стили для формы */
+        .review-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            background-color: #0d0e0d;
+            color: white;
+        }
+
+        .close-btn {
+            background-color: #f1a025;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,12 +98,12 @@
                       placeholder="Поиск по странице"
                     >
                 </div>
-                <a class="go" href="#">О репетиторе</a>
+                <a class="go" href="about.html">О репетиторе</a>
             </div>
             <a class="help" href="#">Поддержать</a>
         </nav>
         <div class="back">
-            <img src="./assets/img/back.png">
+            <img src="./assets/img/back.webp">
             <a class="tutor" href="#">Записаться на занятие</a>
         </div>
     </header>
@@ -46,7 +122,7 @@
                             <br>математике, информатике 
                             <br>и физике с 2008 года</p>
                     </div>
-                    <a href="#">Записаться на занятие</a>
+                    <a href="about.html">Подробнее о репетиторе</a> 
                 </div>
                 <img src="./assets/img/content.png">
             </div>
@@ -67,10 +143,10 @@
                         <div class="otzyvy">
                             <div class="texti">
                                 <div class="top-text">
-                                    <img src="./assets/img/avatar.png">
+                                    <img src="./assets/img/anon.webp">
                                     <div>
-                                        <h1>Марина</h1>
-                                        <p>Мама ученицы</p>
+                                        <h1>Пользователь</h1>
+                                        <p>Пользователь</p>
                                         <div class="stars">
                                             <div class="ss">
                                                 <img class="star" src="./assets/icons/star.svg">
@@ -79,22 +155,22 @@
                                                 <img class="star" src="./assets/icons/star.svg">
                                                 <img class="star" src="./assets/icons/star.svg">
                                             </div>
-                                            <p>5 минут назад</p>
+                                            <p>Недавно</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="bot-text">
-                                    <p>Моя дочь всегда боялась математики, но благодаря курсам "Умного Старта" и преподавателю Анне Ивановой она не только перестала бояться, но и полюбила этот предмет! На пробном ОГЭ она набрала 28 баллов из 32. Спасибо за профессионализм и поддержку!</p>
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
                         <div class="otzyvy">
                             <div class="texti">
                                 <div class="top-text">
-                                    <img src="./assets/img/avatar.png">
+                                    <img src="./assets/img/anon.webp">
                                     <div>
-                                        <h1>Марина</h1>
-                                        <p>Мама ученицы</p>
+                                        <h1>Пользователь</h1>
+                                        <p>Мама ученика</p>
                                         <div class="stars">
                                             <div class="ss">
                                                 <img class="star" src="./assets/icons/star.svg">
@@ -103,22 +179,22 @@
                                                 <img class="star" src="./assets/icons/star.svg">
                                                 <img class="star" src="./assets/icons/star.svg">
                                             </div>
-                                            <p>5 минут назад</p>
+                                            <p>Недавно</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="bot-text">
-                                    <p>Моя дочь всегда боялась математики, но благодаря курсам "Умного Старта" и преподавателю Анне Ивановой она не только перестала бояться, но и полюбила этот предмет! На пробном ОГЭ она набрала 28 баллов из 32. Спасибо за профессионализм и поддержку!</p>
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
                         <div class="otzyvy">
                             <div class="texti">
                                 <div class="top-text">
-                                    <img src="./assets/img/avatar.png">
+                                    <img src="./assets/img/anon.webp">
                                     <div>
-                                        <h1>Марина</h1>
-                                        <p>Мама ученицы</p>
+                                        <h1>Пользователь</h1>
+                                        <p>Мама ученика</p>
                                         <div class="stars">
                                             <div class="ss">
                                                 <img class="star" src="./assets/icons/star.svg">
@@ -127,12 +203,12 @@
                                                 <img class="star" src="./assets/icons/star.svg">
                                                 <img class="star" src="./assets/icons/star.svg">
                                             </div>
-                                            <p>5 минут назад</p>
+                                            <p>Недавно</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="bot-text">
-                                    <p>Моя дочь всегда боялась математики, но благодаря курсам "Умного Старта" и преподавателю Анне Ивановой она не только перестала бояться, но и полюбила этот предмет! На пробном ОГЭ она набрала 28 баллов из 32. Спасибо за профессионализм и поддержку!</p>
+                                    <p>Прекрасный сайт для самоподготовки. Моя дочь решала ваши задачи и мы смогли восполнить пробелы. Здоровья вам!</p>
                                 </div>
                             </div>
                         </div>
@@ -141,10 +217,10 @@
                         <div class="otzyvy">
                             <div class="texti">
                                 <div class="top-text">
-                                    <img src="./assets/img/avatar.png">
+                                    <img src="./assets/img/anon.webp">
                                     <div>
-                                        <h1>Марина</h1>
-                                        <p>Мама ученицы</p>
+                                        <h1>Пользователь</h1>
+                                        <p>Пользователь</p>
                                         <div class="stars">
                                             <div class="ss">
                                                 <img class="star" src="./assets/icons/star.svg">
@@ -153,22 +229,22 @@
                                                 <img class="star" src="./assets/icons/star.svg">
                                                 <img class="star" src="./assets/icons/star.svg">
                                             </div>
-                                            <p>5 минут назад</p>
+                                            <p>Недавно</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="bot-text">
-                                    <p>Моя дочь всегда боялась математики, но благодаря курсам "Умного Старта" и преподавателю Анне Ивановой она не только перестала бояться, но и полюбила этот предмет! На пробном ОГЭ она набрала 28 баллов из 32. Спасибо за профессионализм и поддержку!</p>
+                                    <p>Являюсь репетитором и использую ваш сайт для того, чтобы давать задания ученикам! Спасибо за такой ресурс.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="otzyvy">
                             <div class="texti">
                                 <div class="top-text">
-                                    <img src="./assets/img/avatar.png">
+                                    <img src="./assets/img/anon.webp" alt="">
                                     <div>
-                                        <h1>Марина</h1>
-                                        <p>Мама ученицы</p>
+                                        <h1>Пользователь</h1>
+                                        <p>Мама ученика</p>
                                         <div class="stars">
                                             <div class="ss">
                                                 <img class="star" src="./assets/icons/star.svg">
@@ -177,22 +253,22 @@
                                                 <img class="star" src="./assets/icons/star.svg">
                                                 <img class="star" src="./assets/icons/star.svg">
                                             </div>
-                                            <p>5 минут назад</p>
+                                            <p>Недавно</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="bot-text">
-                                    <p>Моя дочь всегда боялась математики, но благодаря курсам "Умного Старта" и преподавателю Анне Ивановой она не только перестала бояться, но и полюбила этот предмет! На пробном ОГЭ она набрала 28 баллов из 32. Спасибо за профессионализм и поддержку!</p>
+                                    <p>Спасибо.мы очень довольны результатом.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="otzyvy">
                             <div class="texti">
                                 <div class="top-text">
-                                    <img src="./assets/img/avatar.png">
+                                    <img src="./assets/img/anon.webp" alt="">
                                     <div>
-                                        <h1>Марина</h1>
-                                        <p>Мама ученицы</p>
+                                        <h1>Пользователь</h1>
+                                        <p>Мама ученика</p>
                                         <div class="stars">
                                             <div class="ss">
                                                 <img class="star" src="./assets/icons/star.svg">
@@ -201,18 +277,18 @@
                                                 <img class="star" src="./assets/icons/star.svg">
                                                 <img class="star" src="./assets/icons/star.svg">
                                             </div>
-                                            <p>5 минут назад</p>
+                                            <p>Недавно</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="bot-text">
-                                    <p>Моя дочь всегда боялась математики, но благодаря курсам "Умного Старта" и преподавателю Анне Ивановой она не только перестала бояться, но и полюбила этот предмет! На пробном ОГЭ она набрала 28 баллов из 32. Спасибо за профессионализм и поддержку!</p>
+                                    <p>Преподаватель вполне справился со своей задачей в подготовке ученика к сдаче ГИА по математике.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button>Оставить отзыв</button>
+                <button onclick="openModal()">Оставить отзыв</button>
             </div>
         </section>
         <section class="tutor-sam">
@@ -233,7 +309,7 @@
                                             <p>Алгебра, уравнения, функции и другие разделы</p>
                                         </div>
                                     </div>
-                                    <a>Перейти</a>
+                                    <a href="#">Перейти</a>
                                 </div>
                             </div>
                             <div class="conedu">
@@ -246,7 +322,7 @@
                                                 теоремы и многое другое</p>
                                         </div>
                                     </div>
-                                    <a>Перейти</a>
+                                    <a href="#">Перейти</a>
                                 </div>
                             </div>
                         </div>
@@ -260,7 +336,7 @@
                                             <p>Алгоритмы, кодирование,структуры данных</p>
                                         </div>
                                     </div>
-                                    <a>Перейти</a>
+                                    <a href="#">Перейти</a>
                                 </div>
                             </div>
                             <div class="conedu">
@@ -272,7 +348,7 @@
                                             <p>Механика, электричество, магнитизм и другие темы</p>
                                         </div>
                                     </div>
-                                    <a>Перейти</a>
+                                    <a href="#">Перейти</a>
                                 </div>
                             </div>
                         </div>
@@ -284,13 +360,35 @@
     </main>
     <footer>
         <div class="bbb">
-            <p>Корнев Владимир</p>
+            <p>Корнев Владимир. 2025</p>
+            <p class="work">&copy; Разработано в <span>ERROR404.</span> <br>Все материалы защищены авторским правом.</p>
             <div class="aaa">
                 <p>Связаться со мной:</p>
                 <p class="number">+7 916 478 10 32</p>
             </div>
         </div>
     </footer>
+    <div id="reviewModal" class="modal">
+        <div class="modal-content">
+            <h2>Оставить отзыв</h2>
+            <form class="review-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="review">Ваш отзыв:</label>
+                    <textarea id="review" required></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="close-btn" onclick="closeModal()">Закрыть</button>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 </html>
