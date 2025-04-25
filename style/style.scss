@@ -26,7 +26,6 @@ $purple: #907ADB;
   font-family: 'roboto';
   src: url('../assets/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf');
 }
-
 body {
   width: 100%;
   font-family: 'roboto', sans-serif;
@@ -86,6 +85,7 @@ header {
         &:hover {
           color: $primary-color;
           transform: translateY(-5px);
+         
         }
       }
     }
@@ -579,7 +579,7 @@ main {
                   background-color: $primary-color;
                   border-radius: 32px;
                   font-family: 'roboto', sans-serif;
-                  font-size: 36px;
+                  font-size: 24px;
                   color: #FFFFFF;
                   transition: $hover-transition;
                 }
@@ -599,7 +599,7 @@ main {
 }
 footer {
   display: flex;
-  padding: 60px;
+  padding: 30px 60px;
   align-items: center;
   flex-direction: row;
   border-top: 3px solid $primary-color;
@@ -726,12 +726,14 @@ main {
 
 /*Adaptive 320-480*/
 @media (min-width: 320px) and (max-width: 480px) and (hover: none) {
+  
   body {
     height: fit-content;
   }
   a {
     font-size: 10px;
   }
+  
   header {
     nav {
       flex-direction: column;
@@ -744,30 +746,28 @@ main {
       .buttons {
         flex-direction: column;
         gap: 12px;
+        .go:hover {
+          transform: none;
+        }
       }
       .search-container {
         display: none;
-        .search-input {
-          width: 100%;
-          padding: 4px 15px 4px 5px;
-          font-size: 8px;
-        }
-        .search-button {
-          display: none;
-        }
       }
       .help {
         padding: 5px 10px;
       }
+      .help:hover {
+        scale: none;
+      }
     }
     .back {
       .tutor {
-        width: 150px;
-        bottom: 40px;
-        font-size: 12px;
+        width: 120px;
+        bottom: 30px;
+        font-size: 8px;
         white-space: nowrap;
         padding: 4px 8px;
-        left: 14px;
+        left: 13px;
       }
     }
   }
@@ -801,6 +801,10 @@ main {
             border-radius: 4px;
           }
         }
+        .new:hover {
+          transform: none;
+          
+        }
       }
     }
     .about {
@@ -814,15 +818,18 @@ main {
             gap: 6px;
 
             h1 {
-              font-size: 40px;
+              font-size: 20px;
             }
             p {
-              font-size: 26px;
+              font-size: 16px;
             }
           }
           a {
-            font-size: 14px;
-            padding: 8px 16px;
+            font-size: 12px;
+            padding: 6px 12px;
+          }
+          a:hover {
+            background-color: none;
           }
         }
         img {
@@ -899,6 +906,10 @@ main {
                 }
               }
             }
+            .otzyvy:hover {
+              transform: none;
+              
+            }
           }
         }
       }
@@ -907,6 +918,10 @@ main {
         padding: 8px 4px;
         font-size: 12px;
         white-space: nowrap;
+      }
+      button:hover {
+        transform: none;
+        
       }
     }
     .tutor-sam {
@@ -972,6 +987,10 @@ main {
                     padding: 4px 8px;
                     border-radius: 8px;
                     font-size: 9px;
+                  }
+                  a:hover {
+                    transform: none;
+                    background-color: $accent-color;
                   }
                 }
               }
@@ -1067,7 +1086,11 @@ main {
             padding: 5px 3px;
             border-radius: 4px;
             font-size: 10px;
-            
+          }
+          button:hover {
+            transform: none;
+            background-color: $accent-color;
+            box-shadow: none;
           }
           
         }
@@ -1077,6 +1100,7 @@ main {
 }
 /*Adaptive 720*/
 @media (min-width: 768px) and (max-width: 1200px) {
+  
   a {
     font-size: 16px;
   }
@@ -1095,14 +1119,6 @@ main {
       }
       .search-container {
         display: none;
-        .search-input {
-          width: 100%;
-          padding: 4px 15px 4px 5px;
-          font-size: 8px;
-        }
-        .search-button {
-          display: none;
-        }
       }
       .help {
         padding: 10px 15px;
