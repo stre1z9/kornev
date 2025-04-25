@@ -1014,8 +1014,6 @@ main {
   }
   /*О репетиторе*/
   main {
-    
-
     .about-me {
       margin-top: 5px;
       margin-bottom: 5px;
@@ -1024,11 +1022,13 @@ main {
       
 
       .info {
+        flex-direction: column-reverse;
         width: 100%;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
         background-color: #FEFEFE;
         padding: 15px 15px;
         border-radius: 4px;
+        gap: 10px;
 
         .left-section {
           width: 100%;
@@ -1070,9 +1070,6 @@ main {
             
           }
           
-        }
-        img {
-          display: none;
         }
       }
     }

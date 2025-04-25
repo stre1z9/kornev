@@ -889,11 +889,13 @@ main .about-me .info .left-section button:hover {
     padding: 25px 35px;
   }
   main .about-me .info {
+    flex-direction: column-reverse;
     width: 100%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     background-color: #FEFEFE;
     padding: 15px 15px;
     border-radius: 4px;
+    gap: 10px;
   }
   main .about-me .info .left-section {
     width: 100%;
@@ -928,9 +930,6 @@ main .about-me .info .left-section button:hover {
     padding: 5px 3px;
     border-radius: 4px;
     font-size: 10px;
-  }
-  main .about-me .info img {
-    display: none;
   }
 }
 /*Adaptive 720*/
