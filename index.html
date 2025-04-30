@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Kornev School</title>
+    <title>GGenS</title>
     <style>
         /* Стили для модального окна */
         .modal {
@@ -36,12 +36,12 @@
             gap: 15px;
         }
 
-        .form-group {
+        .form-groups {
             display: flex;
             flex-direction: column;
         }
 
-        .form-group label {
+        .form-groups label {
             margin-bottom: 5px;
             font-weight: bold;
         }
@@ -85,9 +85,10 @@
 <body>
     <header>
         <nav>
-            <a class="home" href="#">Kornev School</a>
+            <a class="home" href="#">GGenS</a>
             <div class="buttons">
-                <a class="go" href="#">Тренажер</a>
+                <a class="go" href="tests.html">Тренажер</a>
+                <a class="go" href="terms.html">Условия</a>
                 <div class="search-container">
                     <button class="search-button">
                         <img src="./assets/icons/search.svg" alt="Search">
@@ -99,8 +100,9 @@
                     >
                 </div>
                 <a class="go" href="about.html">О репетиторе</a>
+                <a class="go" href="#">Новости</a>
             </div>
-            <a class="help" href="#">Поддержать</a>
+            <a class="help" href="support.html">Поддержать</a>
         </nav>
         <div class="back">
             <img src="./assets/img/back.webp">
@@ -117,12 +119,12 @@
             <div class="con">
                 <div class="content">
                     <div class="text">
-                        <h1 class="name">Владимир Корнев</h1>
+                        <h1 class="name">Денис Земчихин</h1>
                         <p><span>Репетитор</span> по
                             <br>математике, информатике 
-                            <br>и физике с 2008 года</p>
+                            <br>и физике с 2023 года</p>
                     </div>
-                    <a href="about.html">Подробнее о репетиторе</a> 
+                    <a href="#">Записаться на занятие</a> 
                 </div>
                 <img src="./assets/img/content.png">
             </div>
@@ -357,14 +359,51 @@
                 <img src="./assets/img/img.png">
             </div>
         </section>
+        <section class="form-me">
+            <div class="background">
+                <div class="forma">
+                    <div class="full">
+                        <div class="left-sec">
+                            <h1>ЗАПИШИТЕСЬ <br>НА ЗАНЯТИЕ - И МЫ СВЯЖЕМСЯ С ВАМИ!</h1>
+                            <p>Позвоню в течении часа, отвечу на любые вопросы, помогу подобрать занятия.</p>
+                        </div>
+                        <div class="divid">
+    
+                        </div>
+                        <div class="right-form">
+                            <form class="enrollment-form">
+                                <div class="form-group">
+                                  <input class="polya" type="text" id="name" name="name" required placeholder="Ваше имя">
+                                </div>
+                                <div class="form-group">
+                                  <input class="polya" type="tel" id="phone" name="phone" pattern="\+?[0-9\s\-\(\)]+" required placeholder="Ваш телефон">
+                                </div>
+                                <div class="form-group">
+                                  <select id="subject" name="subject" required class="poly">
+                                    <option value="Предмет" disabled selected class="e">Выберите предмет</option>
+                                    <option>Математика</option>
+                                    <option>Физика</option>
+                                    <option>Алгебра</option>
+                                    <option>Информатика</option>
+                                  </select>
+                                </div>
+                                
+                                <button type="submit" class="submit-btn">Записаться на занятие</button>
+                                <p>Условия занятий вы можете прочитать <a href="terms.html">здесь</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="bbb">
-            <p>Корнев Владимир. 2025</p>
+            <p>Земчихин Денис. 2025</p>
             <p class="work">&copy; Разработано в <span>ERROR404.</span> <br>Все материалы защищены авторским правом.</p>
             <div class="aaa">
                 <p>Связаться со мной:</p>
-                <p class="number">+7 916 478 10 32</p>
+                <p class="number">+7 937 66 209 38</p>
             </div>
         </div>
     </footer>
@@ -372,12 +411,12 @@
         <div class="modal-content">
             <h2>Оставить отзыв</h2>
             <form class="review-form">
-                <div class="form-group">
+                <div class="form-groups">
                     <label for="name">Ваше имя:</label>
                     <input type="text" id="name" required>
                 </div>
                 
-                <div class="form-group">
+                <div class="form-groups">
                     <label for="review">Ваш отзыв:</label>
                     <textarea id="review" required></textarea>
                 </div>

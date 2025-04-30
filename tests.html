@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Тренажер</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="home" href="index.html">GGenS</a>
+            <div class="buttons">
+                <a class="go" href="index.html">Главная</a>
+                <a class="go" href="terms.html">Условия</a>
+                <div class="search-container">
+                    <button class="search-button">
+                        <img src="./assets/icons/search.svg" alt="Search">
+                    </button>
+                    <input
+                     type="text"
+                     class="search-input"
+                     placeholder="Поиск по странице"
+                     >
+                </div>
+                <a class="go" href="about.html">О репетиторе</a>
+                <a class="go" href="news.html">Новости</a>
+            </div>
+            <a class="help" href="support.html">Поддержать</a>
+        </nav>
+    </header>
+    <main>
+        <section class="tests">
+            <h1>Выберите предмет для тестирования</h1>
+            <div class="subject-list">
+                <div class="subject">
+                    <div class="subject-header">
+                        <p>Математика</p>
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="subject-content">
+                        Тесты по этому предмету скоро будут доступны!
+                    </div>
+                </div>
+                <div class="subject">
+                    <div class="subject-header">
+                        <p>Информатика</p>
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="subject-content">
+                        Тесты по этому предмету скоро будут доступны!
+                    </div>
+                </div>
+                <div class="subject">
+                    <div class="subject-header">
+                        <p>Геометрия</p>
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="subject-content">
+                        Тесты по этому предмету скоро будут доступны!
+                    </div>
+                </div>
+                <div class="subject">
+                    <div class="subject-header">
+                        <p>Физика</p>
+                        <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="subject-content">
+                        Тесты по этому предмету скоро будут доступны!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bbb">
+            <p>Земчихин Денис. 2025</p>
+            <p class="work">&copy; Разработано в <span>ERROR404.</span> <br>Все материалы защищены авторским правом.</p>
+            <div class="aaa">
+                <p>Связаться со мной:</p>
+                <p class="number">+7 937 66 209 38</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('.subject').forEach(subject => {
+            subject.addEventListener('click', () => {
+                subject.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

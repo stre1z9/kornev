@@ -146,7 +146,7 @@ main .news {
   padding: 60px 0;
 }
 main .news .news-container {
-  width: 90%;
+  width: 100%;
   max-width: 1600px;
   display: flex;
   justify-content: space-between;
@@ -503,10 +503,10 @@ main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt p {
 }
 main .tutor-sam .container .left .edu .cont .conedu .math a {
   text-align: center;
-  width: 100%;
+  width: 80%;
   padding: 16px 32px;
   background-color: #FB9835;
-  border-radius: 32px;
+  border-radius: 16px;
   font-family: "roboto", sans-serif;
   font-size: 24px;
   color: #FFFFFF;
@@ -516,6 +516,182 @@ main .tutor-sam .container .left .edu .cont .conedu .math a:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   background-color: #907ADB;
+}
+main .form-me {
+  width: 100%;
+  padding: 120px;
+  position: relative;
+}
+main .form-me .background {
+  width: 100%;
+  transform: rotate(2deg);
+  background-color: #FFCF9F;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 60px;
+}
+main .form-me .background .forma {
+  background-color: #FB9835;
+  transform: rotate(-2deg);
+  padding: 40px;
+}
+main .form-me .background .forma .full {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .form-me .background .forma .full .left-sec {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .form-me .background .forma .full .left-sec h1 {
+  font-family: "roboto", sans-serif;
+  font-size: 64px;
+  color: white;
+}
+main .form-me .background .forma .full .left-sec p {
+  font-family: "roboto", sans-serif;
+  font-size: 32px;
+  color: white;
+}
+main .form-me .background .forma .full .divid {
+  width: 3px;
+  background-color: white;
+}
+main .form-me .background .forma .full .right-form {
+  padding-left: 30px;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+}
+main .form-me .background .forma .full .right-form .enrollment-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 80%;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .polya {
+  align-items: center;
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  border: 2px solid #FF9524;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .polya:hover {
+  border-color: #907ADB;
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.1);
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #FF9524;
+  border-radius: 16px;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  color: #757575;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: relative;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23757575'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 24px;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly:hover {
+  border-color: #907ADB;
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.1);
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly:focus {
+  outline: none;
+  border-color: #907ADB;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly:focus option {
+  animation: fadeIn 0.3s ease;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly option {
+  padding: 12px;
+  background: #fff;
+  transition: background 0.3s ease;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly option:checked {
+  background: #e3f2fd;
+  color: #FF9524;
+  font-weight: 500;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly option:hover {
+  background: #f5f5f5;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly .e {
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar {
+  width: 8px;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar-thumb {
+  background: #90caf9;
+  border-radius: 8px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar-thumb:hover {
+  background: #64b5f6;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+main .form-me .background .forma .full .right-form .enrollment-form button {
+  width: 80%;
+  padding: 16px 32px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  font-family: "roboto", sans-serif;
+  font-size: 36px;
+}
+main .form-me .background .forma .full .right-form .enrollment-form p {
+  width: 80%;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  color: #f5f5f5;
+}
+main .form-me .background .forma .full .right-form .enrollment-form p a {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  color: #202020;
+}
+main .form-me .background .forma .full .right-form .enrollment-form button:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background-color: #907ADB;
+  transform: translateY(-5px);
 }
 
 footer {
@@ -588,6 +764,7 @@ main .about-me .info .left-section {
   width: 46%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 60px;
 }
 main .about-me .info .left-section .heading {
@@ -602,22 +779,15 @@ main .about-me .info .left-section .heading p {
   font-size: 24px;
   font-weight: 500;
 }
-main .about-me .info .left-section .achivements {
+main .about-me .info .left-section div {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-}
-main .about-me .info .left-section .achivements .ach1 {
-  display: flex;
-  align-items: center;
   gap: 20px;
-  font-size: 24px;
-  font-weight: 600;
 }
-main .about-me .info .left-section p {
+main .about-me .info .left-section div p {
   font-size: 18px;
 }
-main .about-me .info .left-section button {
+main .about-me .info .left-section div button {
   padding: 20px 10px;
   text-align: center;
   background-color: #FB9835;
@@ -626,10 +796,252 @@ main .about-me .info .left-section button {
   font-size: 20px;
   transition: all 0.3s ease;
 }
-main .about-me .info .left-section button:hover {
+main .about-me .info .left-section div button:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   background-color: #907ADB;
+}
+
+/*Поддержка*/
+main {
+  width: 100%;
+  height: 100%;
+}
+main .support {
+  width: 100%;
+  padding: 150px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .support .sc {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  justify-content: space-between;
+  padding: 60px 60px;
+  border-radius: 16px;
+}
+main .support .sc .scc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  font-family: "roboto", sans-serif;
+}
+main .support .sc .scc h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+main .support .sc .scc p {
+  font-size: 32px;
+  color: #757575;
+}
+main .support .sc .scc .sch {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+main .support .sc .scc .sch p {
+  color: #FB9835;
+  font-size: 32px;
+}
+main .support .sc .scc a {
+  width: 100%;
+  text-align: center;
+  background-color: #FF9524;
+  padding: 16px 32px;
+  border-radius: 16px;
+  color: white;
+}
+
+/*Условия и цены*/
+main {
+  width: 100%;
+  height: 100%;
+}
+main .cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 150px 100px;
+  gap: 120px;
+}
+main .cards-container .top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+main .cards-container .top .card {
+  width: 47%;
+  padding: 60px 60px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  gap: 24px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+main .cards-container .top .card h1 {
+  font-family: "roboto", sans-serif;
+  font-size: 40px;
+}
+main .cards-container .top .card p {
+  font-size: 24px;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  color: #999999;
+}
+main .cards-container .top .card .bottom-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .cards-container .top .card .bottom-row .price-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+main .cards-container .top .card .bottom-row .price-row p {
+  font-family: "roboto", sans-serif;
+  font-size: 40px;
+  color: #FF9524;
+}
+main .cards-container .top .card .bottom-row .price-row p .unit {
+  font-family: "roboto", sans-serif;
+  font-size: 24px;
+  color: #202020;
+}
+main .cards-container .top .card .bottom-row button {
+  width: 30%;
+  padding: 20px 10px;
+  background-color: #FF9524;
+  color: white;
+  border-radius: 8px;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+main .cards-container .top .card .bottom-row button:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  background-color: #907ADB;
+  transform: translateY(-5px);
+}
+main .cards-container .top .card-soon {
+  width: 47%;
+  padding: 60px 60px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  gap: 24px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  background-color: #7e7e7e;
+}
+main .cards-container .top .card-soon h1 {
+  font-family: "roboto", sans-serif;
+  font-size: 40px;
+}
+main .cards-container .top .card-soon p {
+  font-size: 24px;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  color: #999999;
+}
+main .cards-container .top .card-soon .bottom-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main .cards-container .top .card-soon .bottom-row .price-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+main .cards-container .top .card-soon .bottom-row .price-row p {
+  font-family: "roboto", sans-serif;
+  font-size: 40px;
+  color: #757575;
+}
+main .cards-container .top .card-soon .bottom-row .price-row p .unit {
+  font-family: "roboto", sans-serif;
+  font-size: 24px;
+  color: #202020;
+}
+main .cards-container .top .card-soon .bottom-row button {
+  display: none;
+}
+main .cards-container .top .card:hover {
+  transform: translateY(-5px);
+}
+main .cards-container .top .card-soon:hover {
+  transform: translateY(-5px);
+}
+
+/*Тренажер*/
+main {
+  width: 100%;
+  height: 100%;
+}
+main .tests {
+  padding: 100px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main .tests h1 {
+  font-family: "roboto", sans-serif;
+  font-size: 64px;
+}
+main .tests .subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .tests .subject-list .subject {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  background-color: #FF9524;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+main .tests .subject-list .subject .subject-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .tests .subject-list .subject .subject-header p {
+  font-family: "roboto", sans-serif;
+  font-size: 40px;
+  color: #FEFEFE;
+}
+main .tests .subject-list .subject .arrow {
+  transition: transform 0.3s ease;
+}
+main .tests .subject-list .subject .subject-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #ffe5c4;
+  color: black;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+  margin-top: 0;
+  border-radius: 16px;
+}
+main .tests .subject-list .subject.active .subject-content {
+  max-height: 200px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+main .tests .subject-list .subject.active .arrow {
+  transform: rotate(180deg);
 }
 
 /*Adaptive 320-480*/
@@ -666,17 +1078,14 @@ main .about-me .info .left-section button:hover {
     scale: none;
   }
   header .back .tutor {
-    width: 120px;
-    bottom: 30px;
-    font-size: 8px;
-    white-space: nowrap;
-    padding: 4px 8px;
-    left: 13px;
+    display: none;
   }
   main .news {
     padding: 20px;
+    width: 100%;
   }
   main .news .news-container {
+    width: 100%;
     flex-direction: column;
     align-items: center;
   }
@@ -724,7 +1133,7 @@ main .about-me .info .left-section button:hover {
     padding: 6px 12px;
   }
   main .about .con .content a:hover {
-    background-color: none;
+    background-color: #FF9524;
   }
   main .about .con img {
     display: none;
@@ -872,6 +1281,141 @@ main .about-me .info .left-section button:hover {
   main .tutor-sam .container img {
     display: none;
   }
+  main .form-me {
+    width: 100%;
+    padding: 20px;
+  }
+  main .form-me .background {
+    width: 100%;
+    padding: 15px;
+  }
+  main .form-me .background .forma {
+    padding: 10px;
+  }
+  main .form-me .background .forma .full {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main .form-me .background .forma .full .left-sec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .form-me .background .forma .full .left-sec h1 {
+    font-size: 16px;
+  }
+  main .form-me .background .forma .full .left-sec p {
+    font-size: 12px;
+  }
+  main .form-me .background .forma .full .divid {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  }
+  main .form-me .background .forma .full .right-form {
+    padding-left: 6px;
+    width: 100%;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form {
+    width: 100%;
+    gap: 6px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group {
+    gap: 6px;
+    width: 100%;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .polya {
+    width: 100%;
+    padding: 4px 6px;
+    border-radius: 8px;
+    font-size: 10px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .polya:hover {
+    border-color: #907ADB;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly {
+    padding: 4px;
+    border-radius: 8px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.1, 0, 0.1, 0.2);
+    background-position: right 4px center;
+    background-size: 16px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly:hover {
+    border-color: #907ADB;
+    box-shadow: 0 2px 6px rgba(33, 150, 243, 0.1);
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly:focus {
+    outline: none;
+    border-color: #907ADB;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly:focus option {
+    animation: fadeIn 0.3s ease;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly option {
+    padding: 3px;
+    background: #fff;
+    transition: background 0.3s ease;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly option:checked {
+    background: #e3f2fd;
+    color: #FF9524;
+    font-weight: 500;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly option:hover {
+    background: #f5f5f5;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly .e {
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar {
+    width: 8px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar-thumb {
+    background: #90caf9;
+    border-radius: 8px;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar-thumb:hover {
+    background: #64b5f6;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form button {
+    width: 100%;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form p {
+    width: 100%;
+    font-size: 10px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form button:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    background-color: #907ADB;
+    transform: translateY(-5px);
+  }
   footer {
     padding: 15px;
   }
@@ -937,22 +1481,193 @@ main .about-me .info .left-section button:hover {
     display: block;
     width: 20px;
   }
-  main .about-me .info .left-section p {
+  main .about-me .info .left-section div p {
     font-size: 10px;
   }
-  main .about-me .info .left-section button {
+  main .about-me .info .left-section div button {
     padding: 5px 3px;
     border-radius: 4px;
     font-size: 10px;
   }
-  main .about-me .info .left-section button:hover {
+  main .about-me .info .left-section div button:hover {
     transform: none;
     background-color: #FF9524;
     box-shadow: none;
   }
+  main .about-me .info img {
+    border-radius: 8px;
+  }
+  /*Условия и цены*/
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  main .cards-container {
+    width: 100%;
+    padding: 30px 25px;
+    gap: 20px;
+  }
+  main .cards-container .top {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  main .cards-container .top .card {
+    width: 100%;
+    padding: 15px 15px;
+    gap: 6px;
+    border-radius: 8px;
+  }
+  main .cards-container .top .card h1 {
+    font-size: 16px;
+  }
+  main .cards-container .top .card p {
+    font-size: 12px;
+  }
+  main .cards-container .top .card .bottom-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  main .cards-container .top .card .bottom-row .price-row {
+    gap: 3px;
+  }
+  main .cards-container .top .card .bottom-row .price-row p {
+    font-size: 16px;
+  }
+  main .cards-container .top .card .bottom-row .price-row p .unit {
+    font-size: 12px;
+  }
+  main .cards-container .top .card .bottom-row button {
+    width: 50%;
+    padding: 5px 3px;
+    font-size: 12px;
+  }
+  main .cards-container .top .card-soon {
+    width: 100%;
+    padding: 15px 15px;
+    gap: 6px;
+    border-radius: 8px;
+  }
+  main .cards-container .top .card-soon h1 {
+    font-size: 16px;
+  }
+  main .cards-container .top .card-soon p {
+    font-size: 12px;
+  }
+  main .cards-container .top .card-soon .bottom-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  main .cards-container .top .card-soon .bottom-row .price-row {
+    gap: 3px;
+  }
+  main .cards-container .top .card-soon .bottom-row .price-row p {
+    font-size: 16px;
+  }
+  main .cards-container .top .card-soon .bottom-row .price-row p .unit {
+    font-size: 12px;
+  }
+  main .cards-container .top .card-soon .bottom-row button {
+    width: 50%;
+    padding: 5px 3px;
+    font-size: 12px;
+  }
+  main .cards-container .top .card:hover {
+    transform: translateY(-5px);
+  }
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  main .support {
+    padding: 30px 30px;
+  }
+  main .support .sc {
+    flex-direction: column;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px;
+    border-radius: 8px;
+  }
+  main .support .sc .scc {
+    width: 100%;
+    gap: 20px;
+  }
+  main .support .sc .scc h1 {
+    font-size: 18px;
+  }
+  main .support .sc .scc p {
+    font-size: 14px;
+  }
+  main .support .sc .scc .sch {
+    gap: 6px;
+  }
+  main .support .sc .scc .sch p {
+    font-size: 14px;
+  }
+  main .support .sc .scc a {
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+  }
+  main .support .sc img {
+    display: none;
+  }
+  /*Тренажер*/
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  main .tests {
+    padding: 20px 30px;
+    gap: 24px;
+  }
+  main .tests h1 {
+    font-size: 16px;
+  }
+  main .tests .subject-list {
+    gap: 5px;
+  }
+  main .tests .subject-list .subject {
+    padding: 6px 6px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  main .tests .subject-list .subject .subject-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .tests .subject-list .subject .subject-header p {
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    color: #FEFEFE;
+  }
+  main .tests .subject-list .subject .arrow {
+    transition: transform 0.3s ease;
+  }
+  main .tests .subject-list .subject .subject-content {
+    padding: 0 6px;
+    border-radius: 8px;
+    font-family: "roboto", sans-serif;
+    font-size: 12px;
+  }
+  main .tests .subject-list .subject.active .subject-content {
+    max-height: 200px;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  main .tests .subject-list .subject.active .arrow {
+    transform: rotate(180deg);
+  }
 }
 /*Adaptive 720*/
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1440px) {
   a {
     font-size: 16px;
   }
@@ -975,12 +1690,7 @@ main .about-me .info .left-section button:hover {
     padding: 10px 15px;
   }
   header .back .tutor {
-    width: 300px;
-    bottom: 40px;
-    font-size: 16px;
-    white-space: nowrap;
-    padding: 8px 16px;
-    left: 15px;
+    display: none;
   }
   main .news {
     padding: 30px;
@@ -1029,8 +1739,11 @@ main .about-me .info .left-section button:hover {
     font-size: 14px;
     padding: 8px 16px;
   }
+  main .about .con .content a:hover {
+    transform: none;
+  }
   main .about .con img {
-    width: 50%;
+    display: none;
   }
   main .banner p {
     font-size: 18px;
@@ -1165,6 +1878,134 @@ main .about-me .info .left-section button:hover {
     width: 25%;
     height: 100%;
   }
+  main .form-me {
+    padding: 40px;
+  }
+  main .form-me .background {
+    padding: 30px;
+  }
+  main .form-me .background .forma {
+    padding: 20px;
+  }
+  main .form-me .background .forma .full {
+    flex-direction: row;
+    gap: 40px;
+  }
+  main .form-me .background .forma .full .left-sec {
+    width: 100%;
+  }
+  main .form-me .background .forma .full .left-sec h1 {
+    font-size: 20px;
+  }
+  main .form-me .background .forma .full .left-sec p {
+    font-size: 16px;
+  }
+  main .form-me .background .forma .full .divid {
+    width: 1px;
+  }
+  main .form-me .background .forma .full .right-form {
+    padding-left: 12px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form {
+    gap: 12px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group {
+    gap: 12px;
+    width: 100%;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .polya {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .polya:hover {
+    border-color: #907ADB;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly {
+    padding: 8px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.1, 0, 0.1, 0.2);
+    background-position: right 4px center;
+    background-size: 16px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly:hover {
+    border-color: #907ADB;
+    box-shadow: 0 2px 6px rgba(33, 150, 243, 0.1);
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly:focus {
+    outline: none;
+    border-color: #907ADB;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly:focus option {
+    animation: fadeIn 0.3s ease;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly option {
+    padding: 3px;
+    background: #fff;
+    transition: background 0.3s ease;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly option:checked {
+    background: #e3f2fd;
+    color: #FF9524;
+    font-weight: 500;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly option:hover {
+    background: #f5f5f5;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly .e {
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar {
+    width: 8px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar-thumb {
+    background: #90caf9;
+    border-radius: 8px;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar-thumb:hover {
+    background: #64b5f6;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form button {
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form p {
+    width: 100%;
+    font-size: 12px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form p a {
+    font-size: 12px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form button:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    background-color: #907ADB;
+    transform: translateY(-5px);
+  }
   footer {
     padding: 30px;
   }
@@ -1186,6 +2027,49 @@ main .about-me .info .left-section button:hover {
   footer .bbb .aaa p {
     font-size: 12px;
     white-space: nowrap;
+  }
+  /*Поддержка*/
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  main .support {
+    padding: 30px 30px;
+  }
+  main .support .sc {
+    flex-direction: row;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px 30px;
+    border-radius: 16px;
+    gap: 20px;
+  }
+  main .support .sc .scc {
+    width: 100%;
+    gap: 40px;
+  }
+  main .support .sc .scc h1 {
+    font-size: 24px;
+  }
+  main .support .sc .scc p {
+    font-size: 18px;
+  }
+  main .support .sc .scc .sch {
+    gap: 12px;
+  }
+  main .support .sc .scc .sch p {
+    font-size: 18px;
+  }
+  main .support .sc .scc .sch .lamp {
+    width: 10%;
+  }
+  main .support .sc .scc a {
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+  }
+  main .support .sc .img {
+    width: 50%;
   }
   /*О репетиторе*/
   main {
@@ -1243,5 +2127,135 @@ main .about-me .info .left-section button:hover {
   }
   main .about-me .info img {
     display: none;
+  }
+  /*Условия и цены*/
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  main .cards-container {
+    width: 100%;
+    padding: 60px 50px;
+    gap: 40px;
+  }
+  main .cards-container .top {
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+  }
+  main .cards-container .top .card {
+    width: 100%;
+    padding: 30px 30px;
+    gap: 12px;
+    border-radius: 16px;
+  }
+  main .cards-container .top .card h1 {
+    font-size: 20px;
+  }
+  main .cards-container .top .card p {
+    font-size: 16px;
+  }
+  main .cards-container .top .card .bottom-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  main .cards-container .top .card .bottom-row .price-row {
+    gap: 6px;
+  }
+  main .cards-container .top .card .bottom-row .price-row p {
+    font-size: 20px;
+  }
+  main .cards-container .top .card .bottom-row .price-row p .unit {
+    font-size: 16px;
+  }
+  main .cards-container .top .card .bottom-row button {
+    width: 50%;
+    padding: 10px 6px;
+    font-size: 16px;
+  }
+  main .cards-container .top .card-soon {
+    width: 100%;
+    padding: 30px 30px;
+    gap: 12px;
+    border-radius: 16px;
+  }
+  main .cards-container .top .card-soon h1 {
+    font-size: 20px;
+  }
+  main .cards-container .top .card-soon p {
+    font-size: 16px;
+  }
+  main .cards-container .top .card-soon .bottom-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  main .cards-container .top .card-soon .bottom-row .price-row {
+    gap: 6px;
+  }
+  main .cards-container .top .card-soon .bottom-row .price-row p {
+    font-size: 20px;
+  }
+  main .cards-container .top .card-soon .bottom-row .price-row p .unit {
+    font-size: 16px;
+  }
+  main .cards-container .top .card-soon .bottom-row button {
+    width: 50%;
+    padding: 10px 6px;
+    font-size: 16px;
+  }
+  main .cards-container .top .card:hover {
+    transform: translateY(-5px);
+  }
+  /*Тренажер*/
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  main .tests {
+    padding: 40px 60px;
+    gap: 48px;
+  }
+  main .tests h1 {
+    font-size: 20px;
+  }
+  main .tests .subject-list {
+    gap: 10px;
+  }
+  main .tests .subject-list .subject {
+    padding: 12px 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  main .tests .subject-list .subject .subject-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .tests .subject-list .subject .subject-header p {
+    font-family: "roboto", sans-serif;
+    font-size: 20px;
+    color: #FEFEFE;
+  }
+  main .tests .subject-list .subject .arrow {
+    transition: transform 0.3s ease;
+  }
+  main .tests .subject-list .subject .subject-content {
+    padding: 0 12px;
+    border-radius: 10px;
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+  }
+  main .tests .subject-list .subject.active .subject-content {
+    max-height: 200px;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  main .tests .subject-list .subject.active .arrow {
+    transform: rotate(180deg);
   }
 }/*# sourceMappingURL=style.css.map */
