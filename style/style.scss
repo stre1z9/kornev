@@ -1174,11 +1174,10 @@ main {
 @media (min-width: 320px) and (max-width: 480px) and (hover: none) {
   
   body {
-    
     height: fit-content;
   }
   a {
-    font-size: 10px;
+    font-size: 16px;
   }
   
   header {
@@ -1188,7 +1187,7 @@ main {
       gap: 12px;
 
       .home {
-        font-size: 16px;
+        font-size: 24px;
       }
       .buttons {
         flex-direction: column;
@@ -1201,7 +1200,8 @@ main {
         display: none;
       }
       .help {
-        padding: 5px 10px;
+        padding: 10px 15px;
+        font-size: 20px;
       }
       .help:hover {
         scale: none;
@@ -1224,7 +1224,7 @@ main {
 
         .new {
           width: 100%;
-          padding: 8px 6px;
+          padding: 16px 12px;
           justify-content: start;
           height: fit-content;
 
@@ -1232,16 +1232,16 @@ main {
             gap: 6px;
 
             h1 {
-              font-size: 12px;
+              font-size: 20px;
             }
             p {
-              font-size: 8px;
+              font-size: 16px;
             }
           }
           .news-link, a[href="#"] {
-            font-size: 8px;
-            padding: 4px 4px;
-            border-radius: 4px;
+            font-size: 16px;
+            padding: 8px 8px;
+            border-radius: 8px;
           }
         }
         .new:hover {
@@ -1254,22 +1254,23 @@ main {
       padding: 20px;
 
       .con {
+        width: 100%;
         .content {
-          gap: 15px;
+          gap: 30px;
           
           .text {
-            gap: 6px;
+            gap: 12px;
 
             h1 {
-              font-size: 20px;
+              font-size: 40px;
             }
             p {
-              font-size: 16px;
+              font-size: 32px;
             }
           }
           a {
-            font-size: 12px;
-            padding: 6px 12px;
+            font-size: 20px;
+            padding: 12px 24px;
           }
           a:hover {
             background-color: $accent-color;
@@ -1282,7 +1283,7 @@ main {
     }
     .banner {
       p {
-        font-size: 12px;
+        font-size: 16px;
       }
       .your-tutor {
         
@@ -1324,11 +1325,11 @@ main {
                   div {
                     gap: 2px;
                     h1 {
-                      font-size: 16px;
+                      font-size: 20px;
                     }
                     p {
                       font-family: 'roboto', sans-serif;
-                      font-size: 8px;
+                      font-size: 14px;
                       color: #999999;
                     }
                     .stars {
@@ -1344,7 +1345,7 @@ main {
                   }
                 }
                 .bot-text {
-                  font-size: 10px;
+                  font-size: 18px;
                   font-family: 'roboto', sans-serif;
                 }
               }
@@ -1357,9 +1358,9 @@ main {
         }
       }
       button {
-        width: 40%;
-        padding: 8px 4px;
-        font-size: 12px;
+        width: 100%;
+        padding: 16px 8px;
+        font-size: 24px;
         white-space: nowrap;
       }
       button:hover {
@@ -1380,35 +1381,34 @@ main {
             gap: 8px;
 
             h1 {
-              font-size: 24px;
+              font-size: 32px;
             }
             p {
-              font-size: 14px;
+              font-size: 24px;
             }
           }
           .edu {
             flex-direction: column;
-            
             width: 100%;
             gap: 8px;
             .cont {
               width: 100%;
-              gap: 8px;
+              gap: 16px;
 
               .conedu {
-                border-radius: 8px;
+                border-radius: 16px;
                 height: 100%;
 
                 .math {
-                  padding: 12px 12px;
+                  padding: 24px 24px;
                   align-items: flex-start;
                   height: 100%;
-                  gap: 6px;
+                  gap: 12px;
                   
                   
                   img {
                     display: block;
-                    width: 25px;
+                    width: 40px;
                   }
                   .math-text {
                     height: 70%;
@@ -1418,18 +1418,18 @@ main {
                       gap: 4px;
 
                       h1 {
-                        font-size: 14px;
+                        font-size: 24px;
                       }
                       p {
-                        font-size: 8px;
+                        font-size: 16px;
                       }
                     }
                   }
                   a {
-                    width: 30%;
-                    padding: 4px 8px;
-                    border-radius: 8px;
-                    font-size: 9px;
+                    width: 70%;
+                    padding: 8px 16px;
+                    border-radius: 16px;
+                    font-size: 14px;
                   }
                   a:hover {
                     transform: none;
@@ -1465,10 +1465,10 @@ main {
               justify-content: space-between;
   
               h1 {
-                font-size: 16px;
+                font-size: 24px;
               }
               p {
-                font-size: 12px;
+                font-size: 18px;
               }
             }
             .divid {
@@ -1488,18 +1488,18 @@ main {
                   width: 100%;
                   .polya {
                     width: 100%;
-                    padding: 4px 6px;
-                    border-radius: 8px;
-                    font-size: 10px;
+                    padding: 8px 12px;
+                    border-radius: 16px;
+                    font-size: 16px;
   
                     &:hover {
                       border-color: $purple;
                     }
                   }
                   .poly {
-                    padding: 4px;
-                    border-radius: 8px;
-                    font-size: 10px;
+                    padding: 8px 12px;
+                    border-radius: 16px;
+                    font-size: 16px;
                     cursor: pointer;
                     transition: all 0.4s cubic-bezier(0.1, 0, 0.1, 0.2);
                     background-position: right 4px center;
@@ -1574,13 +1574,13 @@ main {
                 }
                 button {
                   width: 100%;
-                  padding: 4px 8px;
+                  padding: 8px 16px;
                   border-radius: 8px;
-                  font-size: 12px;
+                  font-size: 16px;
                 }
                 p {
                   width: 100%;
-                  font-size: 10px;
+                  font-size: 14px;
                 }
                 button:hover {
                   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -1597,13 +1597,15 @@ main {
   footer {
     padding: 15px;
     .bbb {
+      flex-direction: column;
+      gap: 20px;
       p {
         
-        font-size: 8px;
+        font-size: 16px;
       }
       .work {
         font-family: 'roboto', sans-serif;
-        font-size: 6px;
+        font-size: 16px;
         font-weight: 400;
         text-align: center;
   
@@ -1616,7 +1618,7 @@ main {
         gap: 3px;
 
         p {
-          font-size: 8px;
+          font-size: 16px;
           white-space: nowrap;
         }
       }
