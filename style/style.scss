@@ -59,14 +59,16 @@ header {
   width: 100%;
   background-color: $white;
   @include flex-center(column);
-  
+
   nav {
-    width: 90%;
-    padding: 20px;
+    width: 100%;
+    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    border-bottom: 3px solid $primary-color;
+    margin-bottom: 10px;
+
     .home {
       font-size: 32px;
       font-weight: 600;
@@ -1481,10 +1483,10 @@ main {
               width: 100%;
               .enrollment-form {
                 width: 100%;
-                gap: 6px;
+                gap: 12px;
   
                 .form-group {
-                  gap: 6px;
+                  gap: 12px;
                   width: 100%;
                   .polya {
                     width: 100%;
@@ -1580,7 +1582,11 @@ main {
                 }
                 p {
                   width: 100%;
-                  font-size: 14px;
+                  font-size: 12px;
+
+                  a {
+                    font-size: 12px;
+                  }
                 }
                 button:hover {
                   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -1630,7 +1636,7 @@ main {
       margin-top: 5px;
       margin-bottom: 5px;
       width: 100%;
-      padding: 25px 35px;
+      padding: 25px 20px;
       
 
       .info {
@@ -1650,36 +1656,22 @@ main {
             gap: 5px;
 
             h1 {
-              
-              font-size: 20px;
+              white-space: nowrap;
+              font-size: 32px;
             }
             p {
-              font-size: 12px;
+              font-size: 24px;
               font-weight: 500;            
-            }
-          }
-          .achivements {
-            gap: 12px;
-
-            .ach1 {
-              gap: 5px;
-              font-size: 10px;
-              font-weight: 600;
-              
-              img {
-                display: block;
-                width: 20px;
-              }
             }
           }
           div {
             p {
-              font-size: 10px;
+              font-size: 16px;
             }
             button {
-              padding: 5px 3px;
-              border-radius: 4px;
-              font-size: 10px;
+              padding: 10px 6px;
+              border-radius: 8px;
+              font-size: 16px;
             }
             button:hover {
               transform: none;
@@ -1690,7 +1682,7 @@ main {
           
         }
         img {
-          border-radius: 8px;
+          border-radius: 16px;
         }
       }
     }
@@ -1702,7 +1694,7 @@ main {
   
     .cards-container {
       width: 100%;
-      padding: 30px 25px;
+      padding: 25px 20px;
       gap: 20px;
   
       .top {
@@ -1712,36 +1704,36 @@ main {
         .card {
           width: 100%;
           padding: 15px 15px;
-          gap: 6px;
+          gap: 12px;
           border-radius: 8px;
   
           h1 {
-            font-size: 16px;
+            font-size: 24px;
           }
           p {
-            font-size: 12px;
+            font-size: 16px;
           }
           .bottom-row {
             width: 100%;
             flex-direction: column;
             align-items: flex-start;
-            gap: 10px;
+            gap: 20px;
   
             .price-row {
-              gap: 3px;
+              gap: 6px;
   
               p {
-                font-size: 16px;
+                font-size: 24px;
   
                 .unit {
-                  font-size: 12px;
+                  font-size: 16px;
                 }
               }
             }
             button {
-              width: 50%;
-              padding: 5px 3px;
-              font-size: 12px;
+              width: 70%;
+              padding: 10px 6px;
+              font-size: 24px;
 
             }
             
@@ -1754,10 +1746,10 @@ main {
           border-radius: 8px;
   
           h1 {
-            font-size: 16px;
+            font-size: 24px;
           }
           p {
-            font-size: 12px;
+            font-size: 16px;
           }
           .bottom-row {
             width: 100%;
@@ -1769,17 +1761,17 @@ main {
               gap: 3px;
   
               p {
-                font-size: 16px;
+                font-size: 24px;
   
                 .unit {
-                  font-size: 12px;
+                  font-size: 16px;
                 }
               }
             }
             button {
-              width: 50%;
-              padding: 5px 3px;
-              font-size: 12px;
+              width: 70%;
+              padding: 10px 6px;
+              font-size: 24px;
 
             }
             
@@ -1808,23 +1800,23 @@ main {
                 gap: 20px;
   
                 h1 {
-                    font-size: 18px;
+                    font-size: 32px;
                 }
                 p {
-                    font-size: 14px;
+                    font-size: 24px;
                 }
                 .sch {
-                    gap: 6px;
+                    gap: 12px;
   
                     p {
-                        font-size: 14px;
+                        font-size: 24px;
                     }
                 }
                 a {
-                    padding: 4px 8px;
-                    border-radius: 4px;
+                    padding: 16px 16px;
+                    border-radius: 16px;
                     color: white;
-                    font-size: 12px;
+                    font-size: 24px;
                 }
             }
             img {
@@ -1842,14 +1834,14 @@ main {
       gap: 24px;
   
       h1 {
-        font-size: 16px;
+        font-size: 32px;
       }
       .subject-list {
-        gap: 5px;
+        gap: 10px;
   
         .subject {
-          padding: 6px 6px;
-          border-radius: 8px;
+          padding: 12px 12px;
+          border-radius: 12px;
           overflow: hidden;
           cursor: pointer;
       
@@ -1860,7 +1852,7 @@ main {
   
               p {
                 font-family: 'roboto', sans-serif;
-                font-size: 16px;
+                font-size: 24px;
                 color: $light-text;
               }
           }
@@ -1873,7 +1865,7 @@ main {
               padding: 0 6px;
               border-radius: 8px;
               font-family: 'roboto', sans-serif;
-              font-size: 12px;
+              font-size: 16px;
           }
       
           &.active {
@@ -1896,7 +1888,7 @@ main {
 @media (min-width: 768px) and (max-width: 1440px) {
   
   a {
-    font-size: 16px;
+    font-size: 20px;
   }
   header {
     nav {
@@ -1905,7 +1897,7 @@ main {
       gap: 12px;
 
       .home {
-        font-size: 20px;
+        font-size: 24px;
       }
       .buttons {
         flex-direction: row;
@@ -1942,16 +1934,16 @@ main {
             gap: 12px;
 
             h1 {
-              font-size: 18px;
+              font-size: 32px;
             }
             p {
-              font-size: 14px;
+              font-size: 20px;
             }
           }
           .news-link, a[href="#"] {
-            font-size: 14px;
-            padding: 8px 8px;
-            border-radius: 8px;
+            font-size: 20px;
+            padding: 16px 16px;
+            border-radius: 16px;
           }
         }
       }
@@ -1967,14 +1959,14 @@ main {
             gap: 6px;
 
             h1 {
-              font-size: 40px;
+              font-size: 60px;
             }
             p {
-              font-size: 26px;
+              font-size: 40px;
             }
           }
           a {
-            font-size: 14px;
+            font-size: 32px;
             padding: 8px 16px;
           }
           a:hover {
@@ -1989,7 +1981,7 @@ main {
     }
     .banner {
       p {
-        font-size: 18px;
+        font-size: 32px;
       }
       .your-tutor {
         height: 100px;
@@ -2012,23 +2004,28 @@ main {
             gap: 10px;
             .otzyvy {
               width: 100%;
-              padding: 10px 5px;
+              height: 100%;
+              padding: 20px 10px;
               .texti {
                 gap: 5px;
+                height: 100%;
                 .top-text {
+                  height: 100%;
                   gap: 3px;
                   img {
+
                     width: 35px;
                     height: 35px;
                   }
                   div {
+                    
                     gap: 2px;
                     h1 {
-                      font-size: 20px;
+                      font-size: 32px;
                     }
                     p {
                       font-family: 'roboto', sans-serif;
-                      font-size: 12px;
+                      font-size: 16px;
                       color: #999999;
                     }
                     .stars {
@@ -2044,7 +2041,7 @@ main {
                   }
                 }
                 .bot-text {
-                  font-size: 14px;
+                  font-size: 24px;
                   font-family: 'roboto', sans-serif;
                 }
               }
@@ -2053,9 +2050,9 @@ main {
         }
       }
       button {
-        width: 40%;
+        width:  70%;
         padding: 16px 8px;
-        font-size: 16px;
+        font-size: 32px;
         white-space: nowrap;
       }
     }
@@ -2063,31 +2060,29 @@ main {
         padding: 30px;
         width: 100%;
       .container {
-        
         gap: 40px;
+        width: 100%;
+        padding: 30px;
         justify-content: center;
         .left {
           width: 100%;
           gap: 24px;
           .zag {
-            gap: 8px;
+            gap: 16px;
 
             h1 {
-              font-size: 24px;
+              font-size: 40px;
             }
             p {
-              font-size: 14px;
+              font-size: 24px;
             }
           }
           .edu {
             flex-direction: row;
-            
             width: 100%;
             gap: 20px;
             .cont {
-              
-              gap: 8px;
-
+              gap: 16px;
               .conedu {
                 width: 100%;
                 padding: 12px 12px;
@@ -2096,32 +2091,32 @@ main {
 
                 .math {
                   height: 100%;
-                  gap: 12px;
+                  gap: 24px;
                   
                   
                   img {
                     display: block;
-                    width: 25px;
+                    width: 40px;
                   }
                   .math-text {
                     height: 70%;
                     justify-content: space-between;
 
                     .texxt {
-                      gap: 8px;
+                      gap: 16px;
 
                       h1 {
-                        font-size: 14px;
+                        font-size: 32px;
                       }
                       p {
-                        font-size: 8px;
+                        font-size: 20px;
                       }
                     }
                   }
                   a {
-                    padding: 4px 8px;
-                    border-radius: 8px;
-                    font-size: 9px;
+                    padding: 8px 16px;
+                    border-radius: 16px;
+                    font-size: 20px;
                   }
                 }
               }
@@ -2129,8 +2124,7 @@ main {
           }
         }
         img {
-          width: 25%;
-          height: 100%;
+          display: none;
         }
       }
     }
@@ -2142,43 +2136,45 @@ main {
           padding: 20px;
           .full {
             flex-direction: row;
-            gap: 40px;
+            gap: 20px;
             .left-sec {
-              width: 100%;
+              width: 50%;
   
               h1 {
-                font-size: 20px;
+                font-size: 40px;
               }
               p {
-                font-size: 16px;
+                font-size: 20px;
               }
             }
             .divid {
               width: 1px;
             }
             .right-form {
+              width: 50%;
               padding-left: 12px;
               .enrollment-form {
-                gap: 12px;
+                width: 100%;
+                gap: 24px;
                 .form-group {
                   gap: 12px;
                   width: 100%;
                   .polya {
                     width: 100%;
-                    padding: 8px 12px;
+                    padding: 12px 16px;
                     border-radius: 16px;
-                    font-size: 12px;
+                    font-size: 20px;
   
                     &:hover {
                       border-color: $purple;
                     }
                   }
                   .poly {
-                    padding: 8px 12px;
+                    padding: 12px 16px;
                     border-radius: 16px;
-                    font-size: 12px;
+                    font-size: 20px;
                     cursor: pointer;
-                    transition: all 0.4s cubic-bezier(0.1, 0, 0.1, 0.2);
+                    transition: all 0.4s cubic-bezier(0.2, 0, 0.2, 0.2);
                     background-position: right 4px center;
                     background-size: 16px;
                   
@@ -2219,7 +2215,7 @@ main {
                       opacity: 0.8;
                     }
                     select::-webkit-scrollbar {
-                      width: 8px;
+                      width: 10px;
                     }
                     
                     select::-webkit-scrollbar-track {
@@ -2251,17 +2247,17 @@ main {
                 }
                 button {
                   width: 100%;
-                  padding: 8px 16px;
+                  padding: 12px 16px;
                   border-radius: 16px;
-                  font-size: 14px;
+                  font-size: 20px;
                   white-space: nowrap;
                 }
                 p {
                   width: 100%;
-                  font-size: 12px;
+                  font-size: 14px;
 
                   a {
-                    font-size: 12px;
+                    font-size: 14px;
                   }
                 }
                 button:hover {
@@ -2279,12 +2275,14 @@ main {
   footer {
     padding: 30px;
     .bbb {
+      flex-direction: column;
+      gap: 10px;
       p {
-        
-        font-size: 14px;
+
+        font-size: 24px;
       }
       .work {
-        font-size: 12px;
+        font-size: 24px;
         font-weight: 600;
         text-align: center;
   
@@ -2297,7 +2295,7 @@ main {
         gap: 6px;
 
         p {
-          font-size: 12px;
+          font-size: 24px;
           white-space: nowrap;
         }
       }
@@ -2321,26 +2319,26 @@ main {
                 width: 100%;
                 gap: 40px;
                 h1 {
-                    font-size: 24px;
+                    font-size: 32px;
                 }
                 p {
-                    font-size: 18px;
+                    font-size: 24px;
                 }
                 .sch {
                     gap: 12px;
   
                     p {
-                        font-size: 18px;
+                        font-size: 24px;
                     }
                     .lamp {
-                      width: 10%;
+                      width: 20%;
                     }
                 }
                 a {
                     padding: 8px 16px;
                     border-radius: 8px;
                     color: white;
-                    font-size: 16px;
+                    font-size: 20px;
                 }
             }
             .img {
@@ -2368,10 +2366,10 @@ main {
           .heading {
             gap: 5px;
             h1 {
-              font-size: 32px;
+              font-size: 40px;
             }
             p {
-              font-size: 16px;
+              font-size: 24px;
               font-weight: 500;            
             }
           }
@@ -2383,7 +2381,7 @@ main {
               display: flex;
               align-items: center;
               gap: 5px;
-              font-size: 16px;
+              font-size: 20px;
               font-weight: 600;    
               img {
                 display: block;
@@ -2392,12 +2390,12 @@ main {
             }
           }
           p {
-            font-size: 14px;
+            font-size: 20px;
           }
           button {
             padding: 10px 6px;
             border-radius: 6px;
-            font-size: 14px;
+            font-size: 18px;
           }
         }
         img {
@@ -2425,10 +2423,10 @@ main {
           border-radius: 16px;
   
           h1 {
-            font-size: 20px;
+            font-size: 40px;
           }
           p {
-            font-size: 16px;
+            font-size: 32px;
           }
           .bottom-row {
             width: 100%;
@@ -2440,17 +2438,17 @@ main {
               gap: 6px;
   
               p {
-                font-size: 20px;
+                font-size: 32px;
   
                 .unit {
-                  font-size: 16px;
+                  font-size: 24px;
                 }
               }
             }
             button {
-              width: 50%;
-              padding: 10px 6px;
-              font-size: 16px;
+              width: 100%;
+              padding: 16px 12px;
+              font-size: 32px;
 
             }
             
@@ -2463,10 +2461,10 @@ main {
           border-radius: 16px;
   
           h1 {
-            font-size: 20px;
+            font-size: 40px;
           }
           p {
-            font-size: 16px;
+            font-size: 32px;
           }
           .bottom-row {
             width: 100%;
@@ -2476,16 +2474,16 @@ main {
               .price-row {
               gap: 6px;
               p {
-                font-size: 20px;
+                font-size: 32px;
                 .unit {
-                  font-size: 16px;
+                  font-size: 20px;
                 }
               }
             }
             button {
-              width: 50%;
+              width: 100%;
               padding: 10px 6px;
-              font-size: 16px;
+              font-size: 24px;
             }       
           }
         }
@@ -2500,18 +2498,18 @@ main {
     width: 100%;
     height: 100%;
     .tests {
-      padding: 40px 60px;
+      padding: 60px 40px;
       gap: 48px;
   
       h1 {
-        font-size: 20px;
+        font-size: 40px;
       }
       .subject-list {
         gap: 10px;
   
         .subject {
-          padding: 12px 12px;
-          border-radius: 10px;
+          padding: 24px 24px;
+          border-radius: 16px;
           overflow: hidden;
           cursor: pointer;
       
@@ -2522,7 +2520,7 @@ main {
   
               p {
                 font-family: 'roboto', sans-serif;
-                font-size: 20px;
+                font-size: 32px;
                 color: $light-text;
               }
           }
@@ -2535,7 +2533,7 @@ main {
               padding: 0 12px;
               border-radius: 10px;
               font-family: 'roboto', sans-serif;
-              font-size: 16px;
+              font-size: 24px;
           }
       
           &.active {

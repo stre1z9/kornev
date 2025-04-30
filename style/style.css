@@ -31,11 +31,13 @@ header {
   flex-direction: column;
 }
 header nav {
-  width: 90%;
-  padding: 20px;
+  width: 100%;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 3px solid #FB9835;
+  margin-bottom: 10px;
 }
 header nav .home {
   font-size: 32px;
@@ -1325,10 +1327,10 @@ main .tests .subject-list .subject.active .arrow {
   }
   main .form-me .background .forma .full .right-form .enrollment-form {
     width: 100%;
-    gap: 6px;
+    gap: 12px;
   }
   main .form-me .background .forma .full .right-form .enrollment-form .form-group {
-    gap: 6px;
+    gap: 12px;
     width: 100%;
   }
   main .form-me .background .forma .full .right-form .enrollment-form .form-group .polya {
@@ -1413,7 +1415,10 @@ main .tests .subject-list .subject.active .arrow {
   }
   main .form-me .background .forma .full .right-form .enrollment-form p {
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
+  }
+  main .form-me .background .forma .full .right-form .enrollment-form p a {
+    font-size: 12px;
   }
   main .form-me .background .forma .full .right-form .enrollment-form button:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -1452,7 +1457,7 @@ main .tests .subject-list .subject.active .arrow {
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
-    padding: 25px 35px;
+    padding: 25px 20px;
   }
   main .about-me .info {
     flex-direction: column-reverse;
@@ -1471,31 +1476,20 @@ main .tests .subject-list .subject.active .arrow {
     gap: 5px;
   }
   main .about-me .info .left-section .heading h1 {
-    font-size: 20px;
+    white-space: nowrap;
+    font-size: 32px;
   }
   main .about-me .info .left-section .heading p {
-    font-size: 12px;
+    font-size: 24px;
     font-weight: 500;
   }
-  main .about-me .info .left-section .achivements {
-    gap: 12px;
-  }
-  main .about-me .info .left-section .achivements .ach1 {
-    gap: 5px;
-    font-size: 10px;
-    font-weight: 600;
-  }
-  main .about-me .info .left-section .achivements .ach1 img {
-    display: block;
-    width: 20px;
-  }
   main .about-me .info .left-section div p {
-    font-size: 10px;
+    font-size: 16px;
   }
   main .about-me .info .left-section div button {
-    padding: 5px 3px;
-    border-radius: 4px;
-    font-size: 10px;
+    padding: 10px 6px;
+    border-radius: 8px;
+    font-size: 16px;
   }
   main .about-me .info .left-section div button:hover {
     transform: none;
@@ -1503,7 +1497,7 @@ main .tests .subject-list .subject.active .arrow {
     box-shadow: none;
   }
   main .about-me .info img {
-    border-radius: 8px;
+    border-radius: 16px;
   }
   /*Условия и цены*/
   main {
@@ -1512,7 +1506,7 @@ main .tests .subject-list .subject.active .arrow {
   }
   main .cards-container {
     width: 100%;
-    padding: 30px 25px;
+    padding: 25px 20px;
     gap: 20px;
   }
   main .cards-container .top {
@@ -1523,34 +1517,34 @@ main .tests .subject-list .subject.active .arrow {
   main .cards-container .top .card {
     width: 100%;
     padding: 15px 15px;
-    gap: 6px;
+    gap: 12px;
     border-radius: 8px;
   }
   main .cards-container .top .card h1 {
-    font-size: 16px;
+    font-size: 24px;
   }
   main .cards-container .top .card p {
-    font-size: 12px;
+    font-size: 16px;
   }
   main .cards-container .top .card .bottom-row {
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 20px;
   }
   main .cards-container .top .card .bottom-row .price-row {
-    gap: 3px;
+    gap: 6px;
   }
   main .cards-container .top .card .bottom-row .price-row p {
-    font-size: 16px;
+    font-size: 24px;
   }
   main .cards-container .top .card .bottom-row .price-row p .unit {
-    font-size: 12px;
+    font-size: 16px;
   }
   main .cards-container .top .card .bottom-row button {
-    width: 50%;
-    padding: 5px 3px;
-    font-size: 12px;
+    width: 70%;
+    padding: 10px 6px;
+    font-size: 24px;
   }
   main .cards-container .top .card-soon {
     width: 100%;
@@ -1559,10 +1553,10 @@ main .tests .subject-list .subject.active .arrow {
     border-radius: 8px;
   }
   main .cards-container .top .card-soon h1 {
-    font-size: 16px;
+    font-size: 24px;
   }
   main .cards-container .top .card-soon p {
-    font-size: 12px;
+    font-size: 16px;
   }
   main .cards-container .top .card-soon .bottom-row {
     width: 100%;
@@ -1574,15 +1568,15 @@ main .tests .subject-list .subject.active .arrow {
     gap: 3px;
   }
   main .cards-container .top .card-soon .bottom-row .price-row p {
-    font-size: 16px;
+    font-size: 24px;
   }
   main .cards-container .top .card-soon .bottom-row .price-row p .unit {
-    font-size: 12px;
+    font-size: 16px;
   }
   main .cards-container .top .card-soon .bottom-row button {
-    width: 50%;
-    padding: 5px 3px;
-    font-size: 12px;
+    width: 70%;
+    padding: 10px 6px;
+    font-size: 24px;
   }
   main .cards-container .top .card:hover {
     transform: translateY(-5px);
@@ -1605,22 +1599,22 @@ main .tests .subject-list .subject.active .arrow {
     gap: 20px;
   }
   main .support .sc .scc h1 {
-    font-size: 18px;
+    font-size: 32px;
   }
   main .support .sc .scc p {
-    font-size: 14px;
+    font-size: 24px;
   }
   main .support .sc .scc .sch {
-    gap: 6px;
+    gap: 12px;
   }
   main .support .sc .scc .sch p {
-    font-size: 14px;
+    font-size: 24px;
   }
   main .support .sc .scc a {
-    padding: 4px 8px;
-    border-radius: 4px;
+    padding: 16px 16px;
+    border-radius: 16px;
     color: white;
-    font-size: 12px;
+    font-size: 24px;
   }
   main .support .sc img {
     display: none;
@@ -1635,14 +1629,14 @@ main .tests .subject-list .subject.active .arrow {
     gap: 24px;
   }
   main .tests h1 {
-    font-size: 16px;
+    font-size: 32px;
   }
   main .tests .subject-list {
-    gap: 5px;
+    gap: 10px;
   }
   main .tests .subject-list .subject {
-    padding: 6px 6px;
-    border-radius: 8px;
+    padding: 12px 12px;
+    border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
   }
@@ -1653,7 +1647,7 @@ main .tests .subject-list .subject.active .arrow {
   }
   main .tests .subject-list .subject .subject-header p {
     font-family: "roboto", sans-serif;
-    font-size: 16px;
+    font-size: 24px;
     color: #FEFEFE;
   }
   main .tests .subject-list .subject .arrow {
@@ -1663,7 +1657,7 @@ main .tests .subject-list .subject.active .arrow {
     padding: 0 6px;
     border-radius: 8px;
     font-family: "roboto", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
   }
   main .tests .subject-list .subject.active .subject-content {
     max-height: 200px;
@@ -1677,7 +1671,7 @@ main .tests .subject-list .subject.active .arrow {
 /*Adaptive 720*/
 @media (min-width: 768px) and (max-width: 1440px) {
   a {
-    font-size: 16px;
+    font-size: 20px;
   }
   header nav {
     flex-direction: row;
@@ -1685,7 +1679,7 @@ main .tests .subject-list .subject.active .arrow {
     gap: 12px;
   }
   header nav .home {
-    font-size: 20px;
+    font-size: 24px;
   }
   header nav .buttons {
     flex-direction: row;
@@ -1718,15 +1712,15 @@ main .tests .subject-list .subject.active .arrow {
     gap: 12px;
   }
   main .news .news-container .new .new-theme h1 {
-    font-size: 18px;
+    font-size: 32px;
   }
   main .news .news-container .new .new-theme p {
-    font-size: 14px;
+    font-size: 20px;
   }
   main .news .news-container .new .news-link, main .news .news-container .new a[href="#"] {
-    font-size: 14px;
-    padding: 8px 8px;
-    border-radius: 8px;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 16px;
   }
   main .about {
     padding: 30px;
@@ -1738,13 +1732,13 @@ main .tests .subject-list .subject.active .arrow {
     gap: 6px;
   }
   main .about .con .content .text h1 {
-    font-size: 40px;
+    font-size: 60px;
   }
   main .about .con .content .text p {
-    font-size: 26px;
+    font-size: 40px;
   }
   main .about .con .content a {
-    font-size: 14px;
+    font-size: 32px;
     padding: 8px 16px;
   }
   main .about .con .content a:hover {
@@ -1754,7 +1748,7 @@ main .tests .subject-list .subject.active .arrow {
     display: none;
   }
   main .banner p {
-    font-size: 18px;
+    font-size: 32px;
   }
   main .banner .your-tutor {
     height: 100px;
@@ -1780,12 +1774,15 @@ main .tests .subject-list .subject.active .arrow {
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy {
     width: 100%;
-    padding: 10px 5px;
+    height: 100%;
+    padding: 20px 10px;
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti {
     gap: 5px;
+    height: 100%;
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text {
+    height: 100%;
     gap: 3px;
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text img {
@@ -1796,11 +1793,11 @@ main .tests .subject-list .subject.active .arrow {
     gap: 2px;
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div h1 {
-    font-size: 20px;
+    font-size: 32px;
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div p {
     font-family: "roboto", sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     color: #999999;
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .top-text div .stars {
@@ -1812,13 +1809,13 @@ main .tests .subject-list .subject.active .arrow {
     height: 12px;
   }
   main .otzyv .con-otzyv .cont-otzyv .top-con .otzyvy .texti .bot-text {
-    font-size: 14px;
+    font-size: 24px;
     font-family: "roboto", sans-serif;
   }
   main .otzyv button {
-    width: 40%;
+    width: 70%;
     padding: 16px 8px;
-    font-size: 16px;
+    font-size: 32px;
     white-space: nowrap;
   }
   main .tutor-sam {
@@ -1827,6 +1824,8 @@ main .tests .subject-list .subject.active .arrow {
   }
   main .tutor-sam .container {
     gap: 40px;
+    width: 100%;
+    padding: 30px;
     justify-content: center;
   }
   main .tutor-sam .container .left {
@@ -1834,13 +1833,13 @@ main .tests .subject-list .subject.active .arrow {
     gap: 24px;
   }
   main .tutor-sam .container .left .zag {
-    gap: 8px;
+    gap: 16px;
   }
   main .tutor-sam .container .left .zag h1 {
-    font-size: 24px;
+    font-size: 40px;
   }
   main .tutor-sam .container .left .zag p {
-    font-size: 14px;
+    font-size: 24px;
   }
   main .tutor-sam .container .left .edu {
     flex-direction: row;
@@ -1848,7 +1847,7 @@ main .tests .subject-list .subject.active .arrow {
     gap: 20px;
   }
   main .tutor-sam .container .left .edu .cont {
-    gap: 8px;
+    gap: 16px;
   }
   main .tutor-sam .container .left .edu .cont .conedu {
     width: 100%;
@@ -1858,33 +1857,32 @@ main .tests .subject-list .subject.active .arrow {
   }
   main .tutor-sam .container .left .edu .cont .conedu .math {
     height: 100%;
-    gap: 12px;
+    gap: 24px;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math img {
     display: block;
-    width: 25px;
+    width: 40px;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math .math-text {
     height: 70%;
     justify-content: space-between;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt {
-    gap: 8px;
+    gap: 16px;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt h1 {
-    font-size: 14px;
+    font-size: 32px;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math .math-text .texxt p {
-    font-size: 8px;
+    font-size: 20px;
   }
   main .tutor-sam .container .left .edu .cont .conedu .math a {
-    padding: 4px 8px;
-    border-radius: 8px;
-    font-size: 9px;
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 20px;
   }
   main .tutor-sam .container img {
-    width: 25%;
-    height: 100%;
+    display: none;
   }
   main .form-me {
     padding: 40px;
@@ -1897,25 +1895,27 @@ main .tests .subject-list .subject.active .arrow {
   }
   main .form-me .background .forma .full {
     flex-direction: row;
-    gap: 40px;
+    gap: 20px;
   }
   main .form-me .background .forma .full .left-sec {
-    width: 100%;
+    width: 50%;
   }
   main .form-me .background .forma .full .left-sec h1 {
-    font-size: 20px;
+    font-size: 40px;
   }
   main .form-me .background .forma .full .left-sec p {
-    font-size: 16px;
+    font-size: 20px;
   }
   main .form-me .background .forma .full .divid {
     width: 1px;
   }
   main .form-me .background .forma .full .right-form {
+    width: 50%;
     padding-left: 12px;
   }
   main .form-me .background .forma .full .right-form .enrollment-form {
-    gap: 12px;
+    width: 100%;
+    gap: 24px;
   }
   main .form-me .background .forma .full .right-form .enrollment-form .form-group {
     gap: 12px;
@@ -1923,19 +1923,19 @@ main .tests .subject-list .subject.active .arrow {
   }
   main .form-me .background .forma .full .right-form .enrollment-form .form-group .polya {
     width: 100%;
-    padding: 8px 12px;
+    padding: 12px 16px;
     border-radius: 16px;
-    font-size: 12px;
+    font-size: 20px;
   }
   main .form-me .background .forma .full .right-form .enrollment-form .form-group .polya:hover {
     border-color: #907ADB;
   }
   main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly {
-    padding: 8px 12px;
+    padding: 12px 16px;
     border-radius: 16px;
-    font-size: 12px;
+    font-size: 20px;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.1, 0, 0.1, 0.2);
+    transition: all 0.4s cubic-bezier(0.2, 0, 0.2, 0.2);
     background-position: right 4px center;
     background-size: 16px;
   }
@@ -1970,7 +1970,7 @@ main .tests .subject-list .subject.active .arrow {
     opacity: 0.8;
   }
   main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
   }
   main .form-me .background .forma .full .right-form .enrollment-form .form-group .poly select::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -1997,17 +1997,17 @@ main .tests .subject-list .subject.active .arrow {
   }
   main .form-me .background .forma .full .right-form .enrollment-form button {
     width: 100%;
-    padding: 8px 16px;
+    padding: 12px 16px;
     border-radius: 16px;
-    font-size: 14px;
+    font-size: 20px;
     white-space: nowrap;
   }
   main .form-me .background .forma .full .right-form .enrollment-form p {
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
   }
   main .form-me .background .forma .full .right-form .enrollment-form p a {
-    font-size: 12px;
+    font-size: 14px;
   }
   main .form-me .background .forma .full .right-form .enrollment-form button:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -2017,11 +2017,15 @@ main .tests .subject-list .subject.active .arrow {
   footer {
     padding: 30px;
   }
+  footer .bbb {
+    flex-direction: column;
+    gap: 10px;
+  }
   footer .bbb p {
-    font-size: 14px;
+    font-size: 24px;
   }
   footer .bbb .work {
-    font-size: 12px;
+    font-size: 24px;
     font-weight: 600;
     text-align: center;
   }
@@ -2033,7 +2037,7 @@ main .tests .subject-list .subject.active .arrow {
     gap: 6px;
   }
   footer .bbb .aaa p {
-    font-size: 12px;
+    font-size: 24px;
     white-space: nowrap;
   }
   /*Поддержка*/
@@ -2056,25 +2060,25 @@ main .tests .subject-list .subject.active .arrow {
     gap: 40px;
   }
   main .support .sc .scc h1 {
-    font-size: 24px;
+    font-size: 32px;
   }
   main .support .sc .scc p {
-    font-size: 18px;
+    font-size: 24px;
   }
   main .support .sc .scc .sch {
     gap: 12px;
   }
   main .support .sc .scc .sch p {
-    font-size: 18px;
+    font-size: 24px;
   }
   main .support .sc .scc .sch .lamp {
-    width: 10%;
+    width: 20%;
   }
   main .support .sc .scc a {
     padding: 8px 16px;
     border-radius: 8px;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
   }
   main .support .sc .img {
     width: 50%;
@@ -2103,10 +2107,10 @@ main .tests .subject-list .subject.active .arrow {
     gap: 5px;
   }
   main .about-me .info .left-section .heading h1 {
-    font-size: 32px;
+    font-size: 40px;
   }
   main .about-me .info .left-section .heading p {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 500;
   }
   main .about-me .info .left-section .achivements {
@@ -2118,7 +2122,7 @@ main .tests .subject-list .subject.active .arrow {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
   }
   main .about-me .info .left-section .achivements .ach1 img {
@@ -2126,12 +2130,12 @@ main .tests .subject-list .subject.active .arrow {
     width: 30px;
   }
   main .about-me .info .left-section p {
-    font-size: 14px;
+    font-size: 20px;
   }
   main .about-me .info .left-section button {
     padding: 10px 6px;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 18px;
   }
   main .about-me .info img {
     display: none;
@@ -2158,10 +2162,10 @@ main .tests .subject-list .subject.active .arrow {
     border-radius: 16px;
   }
   main .cards-container .top .card h1 {
-    font-size: 20px;
+    font-size: 40px;
   }
   main .cards-container .top .card p {
-    font-size: 16px;
+    font-size: 32px;
   }
   main .cards-container .top .card .bottom-row {
     width: 100%;
@@ -2173,15 +2177,15 @@ main .tests .subject-list .subject.active .arrow {
     gap: 6px;
   }
   main .cards-container .top .card .bottom-row .price-row p {
-    font-size: 20px;
+    font-size: 32px;
   }
   main .cards-container .top .card .bottom-row .price-row p .unit {
-    font-size: 16px;
+    font-size: 24px;
   }
   main .cards-container .top .card .bottom-row button {
-    width: 50%;
-    padding: 10px 6px;
-    font-size: 16px;
+    width: 100%;
+    padding: 16px 12px;
+    font-size: 32px;
   }
   main .cards-container .top .card-soon {
     width: 100%;
@@ -2190,10 +2194,10 @@ main .tests .subject-list .subject.active .arrow {
     border-radius: 16px;
   }
   main .cards-container .top .card-soon h1 {
-    font-size: 20px;
+    font-size: 40px;
   }
   main .cards-container .top .card-soon p {
-    font-size: 16px;
+    font-size: 32px;
   }
   main .cards-container .top .card-soon .bottom-row {
     width: 100%;
@@ -2205,15 +2209,15 @@ main .tests .subject-list .subject.active .arrow {
     gap: 6px;
   }
   main .cards-container .top .card-soon .bottom-row .price-row p {
-    font-size: 20px;
+    font-size: 32px;
   }
   main .cards-container .top .card-soon .bottom-row .price-row p .unit {
-    font-size: 16px;
+    font-size: 20px;
   }
   main .cards-container .top .card-soon .bottom-row button {
-    width: 50%;
+    width: 100%;
     padding: 10px 6px;
-    font-size: 16px;
+    font-size: 24px;
   }
   main .cards-container .top .card:hover {
     transform: translateY(-5px);
@@ -2224,18 +2228,18 @@ main .tests .subject-list .subject.active .arrow {
     height: 100%;
   }
   main .tests {
-    padding: 40px 60px;
+    padding: 60px 40px;
     gap: 48px;
   }
   main .tests h1 {
-    font-size: 20px;
+    font-size: 40px;
   }
   main .tests .subject-list {
     gap: 10px;
   }
   main .tests .subject-list .subject {
-    padding: 12px 12px;
-    border-radius: 10px;
+    padding: 24px 24px;
+    border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
   }
@@ -2246,7 +2250,7 @@ main .tests .subject-list .subject.active .arrow {
   }
   main .tests .subject-list .subject .subject-header p {
     font-family: "roboto", sans-serif;
-    font-size: 20px;
+    font-size: 32px;
     color: #FEFEFE;
   }
   main .tests .subject-list .subject .arrow {
@@ -2256,7 +2260,7 @@ main .tests .subject-list .subject.active .arrow {
     padding: 0 12px;
     border-radius: 10px;
     font-family: "roboto", sans-serif;
-    font-size: 16px;
+    font-size: 24px;
   }
   main .tests .subject-list .subject.active .subject-content {
     max-height: 200px;
